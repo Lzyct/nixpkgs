@@ -4,6 +4,7 @@
 # Enable zsh
  programs.zsh = {
   enable = true;
+  autocd = true;
   enableCompletion = true;
   enableAutosuggestions = true;
   enableSyntaxHighlighting = true;
@@ -42,10 +43,24 @@
    bindkey '^[[A' up-line-or-search # up key
    bindkey '^[[B' down-line-or-search # down key
    '';
+   envExtra = ''
 
+   # Set encoding UTF-8
+   export LC_ALL=en_US.UTF-8
+   export LANG=en_US.UTF-8
+
+   # Android
+   export ANDROID_HOME=/Users/$USER/Library/Android/sdk
+   export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+   # Flutter
+   export FLUTTER_HOME=/Users/$USER/Library/flutter/bin
+   export PATH=$PATH:$FLUTTER_HOME
+   export PATH="$PATH":"$HOME/.pub-cache/bin"
+   '';
    history = {
-     size = 100000;
-     save = 100000;
+     size = 10000000;
+     save = 10000000;
    };
 
    zplug = {

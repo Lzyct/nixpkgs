@@ -4,16 +4,16 @@
   # Bat, a substitute for cat.
   # https://github.com/sharkdp/bat
   # https://rycee.gitlab.io/home-manager/options.html#opt-programs.bat.enable
-  programs.bat.enable = true;
-  programs.bat.config = {
-    style = "plain";
-  };
+  #  programs.bat.enable = true;
+  #  programs.bat.config = {
+  #    style = "plain";
+  #  };
 
   # Direnv, load and unload environment variables depending on the current directory.
   # https://direnv.net
   # https://rycee.gitlab.io/home-manager/options.html#opt-programs.direnv.enable
-  programs.direnv.enable = true;
-  programs.direnv.nix-direnv.enable = true;
+  # programs.direnv.enable = true;
+  # programs.direnv.nix-direnv.enable = true;
 
   # Htop
   # https://rycee.gitlab.io/home-manager/options.html#opt-programs.htop.enable
@@ -23,7 +23,7 @@
   # Zoxide, a faster way to navigate the filesystem
   # https://github.com/ajeetdsouza/zoxide
   # https://rycee.gitlab.io/home-manager/options.html#opt-programs.zoxide.enable
-  programs.zoxide.enable = true;
+  # programs.zoxide.enable = true;
 
   # Setup vim
   programs.vim.enable = true;
@@ -199,7 +199,6 @@
     fd # fancy version of `find`
     htop # fancy version of `top`
 
-
     # Useful nix related tools
     cachix # adding/managing alternative binary caches hosted by Cachix
     comma # run software from without installing it
@@ -207,7 +206,6 @@
     nix-tree # interactively browse dependency graphs of Nix derivations
     nix-update # swiss-knife for updating nix packages
     nixpkgs-review # review pull-requests on nixpkgs
-    nodePackages.node2nix
     statix # lints and suggestions for the Nix programming language
 
   ] ++ lib.optionals stdenv.isDarwin [

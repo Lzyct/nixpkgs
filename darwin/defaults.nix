@@ -7,8 +7,6 @@
     AppleMetricUnits = 1;
     AppleShowScrollBars = "Automatic";
     AppleTemperatureUnit = "Celsius";
-    InitialKeyRepeat = 15;
-    KeyRepeat = 2;
     NSAutomaticCapitalizationEnabled = false;
     NSAutomaticDashSubstitutionEnabled = false;
     NSAutomaticPeriodSubstitutionEnabled = false;

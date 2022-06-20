@@ -21,8 +21,6 @@
   nix.extraOptions = ''
     auto-optimise-store = true
     experimental-features = nix-command flakes
-    keep-outputs = true
-    keep-derivations = true
   '' + lib.optionalString (pkgs.system == "aarch64-darwin") ''
     extra-platforms = x86_64-darwin aarch64-darwin
   '';
@@ -33,32 +31,13 @@
 
   # Shells -----------------------------------------------------------------------------------------
 
+  programs.zsh.enable = true;
+
   # Add shells installed by nix to /etc/shells file
   environment.shells = with pkgs; [
     bashInteractive
     zsh
   ];
-
-
-  environment.variables.SHELL = "${pkgs.zsh}/bin/zsh";
-
-  # Make zsh as the default shell
-  programs.zsh = {
-  enable = true;
-  interactiveShellInit = ''
-   # Set encoding UTF-8
-   export LC_ALL=en_US.UTF-8
-   export LANG=en_US.UTF-8
-   # Android
-   export ANDROID_HOME=/Users/$USER/Library/Android/sdk
-   export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-
-   # Flutter
-   export FLUTTER_HOME=/Users/$USER/Library/flutter/bin
-   export PATH=$PATH:$FLUTTER_HOME
-   export PATH="$PATH":"$HOME/.pub-cache/bin"
-  '';
-  };
 
   # Used for backwards compatibility, please read the changelog before changing.
   # $ darwin-rebuild changelog
