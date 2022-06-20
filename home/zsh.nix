@@ -5,8 +5,8 @@
  programs.zsh = {
   enable = true;
   enableCompletion = true;
-  autosuggestions.enable = true;
-  syntaxHighlighting.enable = true;
+  enableAutosuggestions = true;
+  enableSyntaxHighlighting = true;
   shellAliases = {
    ls = "${pkgs.exa}/bin/exa --color=auto --group-directories-first --classify --icons";
    intel = "arch -x86_64";

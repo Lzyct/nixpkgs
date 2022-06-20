@@ -83,7 +83,7 @@
     in
     {
 
-      # System outputs ------------------------------------------------------------------------- {{{
+      I# System outputs ------------------------------------------------------------------------- {{{
 
       # My `nix-darwin` configs
       darwinConfigurations = rec {
@@ -310,7 +310,7 @@
         lzyct-git = import ./home/git.nix;
         lzyct-git-aliases = import ./home/git-aliases.nix;
         lzyct-gh-aliases = import ./home/gh-aliases.nix;
-        lzyct-zsh = import ./home/zsh.nix;
+        # lzyct-zsh = import ./home/zsh.nix;
         lzyct-packages = import ./home/packages.nix;
 
         # Modules I've created
@@ -320,7 +320,7 @@
             (self.darwinModules.users-primaryUser { inherit lib; }).options.users.primaryUser;
         };
       };
-      # }}}
+      #I }}}
 
       # Add re-export `nixpkgs` packages with overlays.
       # This is handy in combination with `nix registry add my /Users/Lzyct/.config/nixpkgs`
