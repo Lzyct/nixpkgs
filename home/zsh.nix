@@ -4,8 +4,7 @@
 # Enable zsh
  programs.zsh = {
   enable = true;
-  autocd = true;
-  enableCompletion = true;
+  enableCompletion = false;
   enableAutosuggestions = true;
   enableSyntaxHighlighting = true;
 

@@ -307,7 +307,7 @@
         # My configurations
         lzyct-config-files = import ./home/config-files.nix;
         lzyct-git = import ./home/git.nix;
-        lzyct-zsh = import ./home/zsh.nix;
+        lzyct-fish = import ./home/fish.nix;
         lzyct-packages = import ./home/packages.nix;
 
         # Modules I've created
