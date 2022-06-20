@@ -6,12 +6,6 @@
   # Aliases config in ./configs/git-aliases.nix
   programs.git.enable = true;
 
-  programs.git.extraConfig = {
-    core.editor = "${pkgs.neovim-remote}/bin/nvr --remote-wait-silent -cc split";
-    diff.colorMoved = "default";
-    pull.rebase = true;
-  };
-
   programs.git.ignores = [
     ".DS_Store"
   ];

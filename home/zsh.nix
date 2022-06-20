@@ -44,14 +44,10 @@
    '';
 
    history = {
-     expireDuplicatesFirst = true;
-     ignoreDups = true;
-     ignoreSpace = true;
-     extended = true;
-     share = true;
      size = 100000;
      save = 100000;
    };
+
    zplug = {
       enable = true;
       plugins = [

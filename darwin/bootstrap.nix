@@ -45,9 +45,9 @@
   # Make zsh as the default shell
   programs.zsh = {
   enable = true;
-  enableCompletion = true;
   interactiveShellInit = ''
    # Set encoding UTF-8
+   export LC_ALL=en_US.UTF-8
    export LANG=en_US.UTF-8
    # Android
    export ANDROID_HOME=/Users/$USER/Library/Android/sdk

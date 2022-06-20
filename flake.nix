@@ -307,8 +307,6 @@
         # My configurations
         lzyct-config-files = import ./home/config-files.nix;
         lzyct-git = import ./home/git.nix;
-        lzyct-git-aliases = import ./home/git-aliases.nix;
-        lzyct-gh-aliases = import ./home/gh-aliases.nix;
         lzyct-zsh = import ./home/zsh.nix;
         lzyct-packages = import ./home/packages.nix;
 
