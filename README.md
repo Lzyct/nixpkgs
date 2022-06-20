@@ -8,6 +8,7 @@ This is my personal configuration with [nix](https://nixos.org/) using [**flakes
 
 ```console
 .
+├── README.md
 ├── darwin
 │   ├── bootstrap.nix
 │   ├── defaults.nix
@@ -18,16 +19,14 @@ This is my personal configuration with [nix](https://nixos.org/) using [**flakes
 ├── flake.nix
 ├── home
 │   ├── config-files.nix
-│   ├── gh-aliases.nix
-│   ├── git-aliases.nix
+│   ├── fish.nix
 │   ├── git.nix
-│   ├── neovim.nix
 │   ├── packages.nix
-│   └── vim.nix
+│   └── zsh.nix
 ├── nixpkgs.nix
 └── result -> /nix/store/xxxx (the result when completed run nix build)
 
-3 directories, 15 files
+3 directories, 14 files
 
 ```
 
