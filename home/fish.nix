@@ -42,6 +42,21 @@
     }
   ];
 
+ programs.fish.shellInit = ''
+     set -x LC_ALL en_US.UTF-8
+     set -x LANG en_US.UTF-8
+
+     # Android
+     set -x ANDROID_HOME /Users/$USER/Library/Android/sdk
+     set -x PATH $PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+     # Flutter
+     set -x FLUTTER_HOME /Users/$USER/Library/flutter/bin
+     set -x PATH $PATH:$FLUTTER_HOME
+     set -x PATH "$PATH":"$HOME/.pub-cache/bin"
+     set fish_greeting
+  '';
+
   programs.fish.functions = {
     gitignore = "curl -sL https://www.gitignore.io/api/$argv";
   };
