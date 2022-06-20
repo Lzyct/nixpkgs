@@ -98,7 +98,7 @@ in
     "postman"
     "rectangle"
     "telegram"
-    "upwork"
+    # "upwork" issue install from homebrew
     "visual-studio-code"
     "whatsapp"
   ];

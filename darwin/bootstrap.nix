@@ -39,6 +39,9 @@
     zsh
   ];
 
+
+  environment.variables.SHELL = "${pkgs.zsh}/bin/zsh";
+
   # Make zsh as the default shell
   programs.zsh = {
   enable = true;

@@ -83,8 +83,7 @@
     in
     {
 
-      I# System outputs ------------------------------------------------------------------------- {{{
-
+      # System outputs ------------------------------------------------------------------------- {{{
       # My `nix-darwin` configs
       darwinConfigurations = rec {
         # Mininal configurations to bootstrap systems
@@ -310,7 +309,7 @@
         lzyct-git = import ./home/git.nix;
         lzyct-git-aliases = import ./home/git-aliases.nix;
         lzyct-gh-aliases = import ./home/gh-aliases.nix;
-        # lzyct-zsh = import ./home/zsh.nix;
+        lzyct-zsh = import ./home/zsh.nix;
         lzyct-packages = import ./home/packages.nix;
 
         # Modules I've created
