@@ -96,6 +96,7 @@ in
     "meld"
     "notion"
     "postman"
+    "maven"
     "rectangle"
     "telegram"
     # "upwork" issue install from homebrew
