@@ -82,6 +82,7 @@ in
     "airbuddy"
     "appcleaner"
     "discord"
+    "dbeaver-community"
     "dozer"
     "figma"
     "free-download-manager"
@@ -97,6 +98,7 @@ in
     "notion"
     "postman"
     "rectangle"
+    "insomnia"
     "telegram"
     # "upwork" issue install from homebrew
     "visual-studio-code"
