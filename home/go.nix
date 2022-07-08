@@ -2,6 +2,6 @@
 
 {
    # Setup go
-   programs.go.enable = false;
+   programs.go.enable = true;
 
 }
