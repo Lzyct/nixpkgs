@@ -82,7 +82,7 @@ in
     "airbuddy"
     "appcleaner"
     "discord"
-    "dbeaver-communitydozer"
+    "dbeaver-community"
     "dozer"
     "figma"
     "free-download-manager"
