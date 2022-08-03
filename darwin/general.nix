@@ -1,5 +1,7 @@
 { pkgs, ... }:
 
+# Docs : https://daiderd.com/nix-darwin/manual/index.html
+
 {
   # Networking
   networking.dns = [
@@ -26,6 +28,9 @@
 
   # Add ability to used TouchID for sudo authentication
   security.pam.enableSudoTouchIdAuth = false;
+
+  # Disable iCloud sync
+  system.defaults.NSGlobalDomain.NSDocumentSaveNewDocumentsToCloud = false;
 
   # Networks
   # dnscrypt-proxy
