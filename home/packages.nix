@@ -38,6 +38,7 @@
     htop # fancy version of `top`
     neofetch
     wget
+    yarn
     
 
     # Useful nix related tools
