@@ -39,8 +39,7 @@
     neofetch
     wget
     yarn
-
-    comma # run without install    
+    google-cloud-sdk
 
     # Useful nix related tools
     cachix # adding/managing alternative binary caches hosted by Cachix
