@@ -84,6 +84,7 @@ in
     "discord"
     "dbeaver-community"
     "dozer"
+    "fig"
     "figma"
     "free-download-manager"
     "google-chrome"
