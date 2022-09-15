@@ -83,6 +83,7 @@ in
     "appcleaner"
     "discord"
     "dbeaver-community"
+    "docker"
     "dozer"
     "fig"
     "figma"
