@@ -41,6 +41,8 @@
     yarn
     google-cloud-sdk
 
+    tokei # get information about current project
+
     # Useful nix related tools
     cachix # adding/managing alternative binary caches hosted by Cachix
     comma # run software from without installing it
