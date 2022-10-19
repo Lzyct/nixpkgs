@@ -39,6 +39,7 @@
     neofetch
     wget
     yarn
+    nodejs
     google-cloud-sdk
 
     tokei # get information about current project
