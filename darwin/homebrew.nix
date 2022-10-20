@@ -85,6 +85,7 @@ in
     "dbeaver-community"
     "docker"
     "dozer"
+    "obsidian"
     "fig"
     "figma"
     "free-download-manager"
