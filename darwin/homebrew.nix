@@ -90,6 +90,7 @@ in
     "figma"
     "free-download-manager"
     "google-chrome"
+    "grammarly"
     "iina"
     "intellij-idea-ce"
     "istat-menus"
