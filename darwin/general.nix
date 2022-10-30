@@ -20,11 +20,11 @@
   programs.nix-index.enable = true;
 
   # Fonts TEMPORARY DISABLE THIS CONFIG not working on Ventura
-  # fonts.fontDir.enable = true;
-  # fonts.fonts = with pkgs; [
-  #    recursive
-  #    (nerdfonts.override { fonts = [ "JetBrainsMono" "FiraCode" "Hack" ]; })
-  #  ];
+  fonts.fontDir.enable = true;
+  fonts.fonts = with pkgs; [
+     recursive
+     (nerdfonts.override { fonts = [ "JetBrainsMono" "FiraCode" "Hack" ]; })
+   ];
 
   # Add ability to used TouchID for sudo authentication
   security.pam.enableSudoTouchIdAuth = false;
