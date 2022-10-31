@@ -108,6 +108,7 @@ in
     "visual-studio-code"
     "whatsapp"
     "blackhole-16ch"
+    "obs"
   ];
 
   # Configuration related to casks
