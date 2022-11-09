@@ -4,8 +4,9 @@
   # Nix configuration ------------------------------------------------------------------------------
 
   nix.settings.substituters = [
+    "https://cache.komunix.org/"
     "https://cache.nixos.org/"
-    "https://lzyct.cachix.org"
+    "https://lzyct.cachix.org/"
   ];
   nix.settings.trusted-public-keys = [
     "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
