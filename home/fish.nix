@@ -46,6 +46,9 @@
      set -x LC_ALL en_US.UTF-8
      set -x LANG en_US.UTF-8
 
+     # Rust
+     set -gx PATH "$HOME/.cargo/bin" $PATH
+
      # Android
      set -x ANDROID_HOME /Users/$USER/Library/Android/sdk
      set -x PATH $PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools

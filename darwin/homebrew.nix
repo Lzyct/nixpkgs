@@ -107,7 +107,6 @@ in
     # "upwork" issue install from homebrew
     "visual-studio-code"
     "whatsapp"
-    "blackhole-16ch"
     "obs"
   ];
 
