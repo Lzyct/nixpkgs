@@ -13,7 +13,6 @@
     _HIHideMenuBar = false;
     AppleShowAllExtensions = true;
     NSAutomaticSpellingCorrectionEnabled = false;
-    dock.autohide-dela
   };
 
   # Dock
