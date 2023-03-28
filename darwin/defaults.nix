@@ -16,7 +16,7 @@
   };
 
   # Dock
-  system.defaults.dock.autohide-delay = 0;
+  system.defaults.dock.autohide-delay = 0.0;
   system.defaults.dock.orientation = "left";
 
   # Firewall
