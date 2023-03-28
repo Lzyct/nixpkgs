@@ -13,7 +13,12 @@
     _HIHideMenuBar = false;
     AppleShowAllExtensions = true;
     NSAutomaticSpellingCorrectionEnabled = false;
+    dock.autohide-dela
   };
+
+  # Dock
+  system.defaults.dock.autohide-delay = 0;
+  system.defaults.dock.orientation = "left";
 
   # Firewall
   system.defaults.alf = {
