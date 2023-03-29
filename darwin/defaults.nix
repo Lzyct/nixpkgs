@@ -34,7 +34,7 @@
     wvous-br-corner = 1;
     wvous-tl-corner = 1;
     wvous-tr-corner = 1;
-    autohide-delay = 0;
+    autohide-delay = 0.0;
     orientation = "left";
   };
 
