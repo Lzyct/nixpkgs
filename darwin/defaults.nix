@@ -15,10 +15,6 @@
     NSAutomaticSpellingCorrectionEnabled = false;
   };
 
-  # Dock
-  system.defaults.dock.autohide-delay = 0.0;
-  system.defaults.dock.orientation = "left";
-
   # Firewall
   system.defaults.alf = {
     globalstate = 1;
@@ -38,6 +34,8 @@
     wvous-br-corner = 1;
     wvous-tl-corner = 1;
     wvous-tr-corner = 1;
+    autohide-delay = 0;
+    orientation = "left";
   };
 
   # Login and lock screen
