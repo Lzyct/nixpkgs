@@ -57,6 +57,11 @@
      set -x FLUTTER_HOME /Users/$USER/Library/flutter/bin
      set -x PATH $PATH:$FLUTTER_HOME
      set -x PATH "$PATH":"$HOME/.pub-cache/bin"
+     
+     # IntelliJ idea
+     set -x INTELLIJ_IDEA "/Applications/IntelliJ IDEA CE.app/Contents/MacOS"
+     set -x PATH $PATH:$INTELLIJ_IDEA
+
      set fish_greeting
   '';
 
