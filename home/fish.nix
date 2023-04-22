@@ -70,6 +70,13 @@
     ic = {
       body = "idea $argv > /dev/null 2>&1 &";
     };
+    fbuild = {
+      body = "
+        flutter clean;
+        flutter pub get;
+        flutter build ipa --flavor $argv -t lib/main_$argv.dart;
+        flutter build apk --flavor $argv -t lib/main_$argv.dart";
+    };
   };
 
   # Fish abbreviations
@@ -83,6 +90,7 @@
     # Nix related
     drb = "darwin-rebuild build --flake ~/.config/nixpkgs/";
     drs = "darwin-rebuild switch --flake ~/.config/nixpkgs/";
+    # Flutter related
     fbr = "flutter pub run build_runner build --delete-conflicting-outputs";
   };
 }
