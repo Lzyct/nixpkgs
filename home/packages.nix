@@ -54,7 +54,7 @@
     statix # lints and suggestions for the Nix programming language
 
   ] ++ lib.optionals stdenv.isDarwin [
-    cocoapods
+    # cocoapods preferably installed via homebrew to get latest version
     m-cli # useful macOS CLI commands
     xcode-install
   ];

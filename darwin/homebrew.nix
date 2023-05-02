@@ -81,6 +81,7 @@ in
   homebrew.casks = [
     "airbuddy"
     "appcleaner"
+    "cocoapods"
     "discord"
     "dbeaver-community"
     "docker"
@@ -119,7 +120,7 @@ in
   homebrew.brews = [
     "swift-format"
     "swiftlint"
-    "cocoapods"
+    #"cocoapods"
     "pkg-config"
     "maven"
   ];
