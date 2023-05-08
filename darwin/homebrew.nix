@@ -99,6 +99,7 @@ in
     "keka"
     "meld"
     "notion"
+    "orbstack"
     "postman"
     "rectangle"
     "insomnia"
