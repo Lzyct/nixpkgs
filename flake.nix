@@ -4,11 +4,16 @@
   inputs = {
     # Package sets
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-21.11-darwin";
-    nixpkgs-unstable.url = github:NixOS/nixpkgs/nixpkgs-unstable;
+    nixpkgs-master.url = "github:NixOS/nixpkgs/master";
+    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixpkgs-22.11-darwin";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixos-stable.url = "github:NixOS/nixpkgs/nixos-22.11";
 
     # Environment/system management
     darwin.url = "github:lnl7/nix-darwin/master";
     darwin.inputs.nixpkgs.follows = "nixpkgs-unstable";
+
+    # Home manager
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs-unstable";
 
@@ -43,13 +48,13 @@
         ];
       };
 
-      homeManagerStateVersion = "22.11";
+      homeManagerStateVersion = "23.05";
 
       primaryUserInfo = {
-        username = "Lzyct";
+        username = "lzyct";
         fullName = "Lzyct";
         email = "hey.mudassir@gmail.com";
-        nixConfigDirectory = "/Users/Lzyct/.config/nixpkgs";
+        nixConfigDirectory = "/Users/lzyct/.config/nixpkgs";
       };
 
       # Modules shared by most `nix-darwin` personal configurations.
@@ -123,6 +128,22 @@
           ];
         };
       };
+
+    homeConfigurations.lzyct =
+    let
+        pkgs = import inputs.nixpkgs-unstable (nixpkgsConfig // { system = "aarch64-linux"; });
+    in
+    inputs.home-manager.lib.homeManagerConfiguration {
+      inherit pkgs;
+      modules = attrValues self.homeManagerModules ++ singleton ({ config, ... }: {
+                    home.username = primaryUserInfo.username;
+                    home.homeDirectory = "/${if pkgs.stdenv.isDarwin then "Users" else "home"}/${primaryUserInfo.username}";
+                    home.stateVersion = homeManagerStateVersion;
+                    home.user-info = primaryUserInfo // {
+                    nixConfigDirectory = "${primaryUserInfo.nixConfigDirectory}";
+                     };
+                });
+    };
 
       # Non-system outputs --------------------------------------------------------------------- {{{
 
