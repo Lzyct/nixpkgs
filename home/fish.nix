@@ -91,6 +91,6 @@
     drb = "darwin-rebuild build --flake ~/.config/nixpkgs/";
     drs = "darwin-rebuild switch --flake ~/.config/nixpkgs/";
     # Flutter related
-    fbr = "flutter pub run build_runner build --delete-conflicting-outputs";
+    dbr = "dart run build_runner build --delete-conflicting-outputs";
   };
 }
