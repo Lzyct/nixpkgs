@@ -129,21 +129,22 @@
         };
       };
 
-    homeConfigurations.lzyct =
-    let
-        pkgs = import inputs.nixpkgs-unstable (nixpkgsConfig // { system = "aarch64-linux"; });
-    in
-    inputs.home-manager.lib.homeManagerConfiguration {
-      inherit pkgs;
-      modules = attrValues self.homeManagerModules ++ singleton ({ config, ... }: {
-                    home.username = primaryUserInfo.username;
-                    home.homeDirectory = "/${if pkgs.stdenv.isDarwin then "Users" else "home"}/${primaryUserInfo.username}";
-                    home.stateVersion = homeManagerStateVersion;
-                    home.user-info = primaryUserInfo // {
-                    nixConfigDirectory = "${primaryUserInfo.nixConfigDirectory}";
-                     };
-                });
-    };
+#   TODO: Need to fix it
+#    homeConfigurations.lzyct =
+#    let
+#        pkgs = import inputs.nixpkgs-unstable (nixpkgsConfig // { system = "aarch64-linux"; });
+#    in
+#    inputs.home-manager.lib.homeManagerConfiguration {
+#      inherit pkgs;
+#      modules = attrValues self.homeManagerModules ++ singleton ({ config, ... }: {
+#                    home.username = primaryUserInfo.username;
+#                    home.homeDirectory = "/${if pkgs.stdenv.isDarwin then "Users" else "home"}/${primaryUserInfo.username}";
+#                    home.stateVersion = homeManagerStateVersion;
+#                    home.user-info = primaryUserInfo // {
+#                    nixConfigDirectory = "${primaryUserInfo.nixConfigDirectory}";
+#                     };
+#                });
+#    };
 
       # Non-system outputs --------------------------------------------------------------------- {{{
 
