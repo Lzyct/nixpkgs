@@ -51,10 +51,10 @@
       homeManagerStateVersion = "22.11";
 
       primaryUserInfo = {
-        username = "lzyct";
+        username = "Lzyct";
         fullName = "Lzyct";
         email = "hey.mudassir@gmail.com";
-        nixConfigDirectory = "/Users/lzyct/.config/nixpkgs";
+        nixConfigDirectory = "/Users/Lzyct/.config/nixpkgs";
       };
 
       # Modules shared by most `nix-darwin` personal configurations.
