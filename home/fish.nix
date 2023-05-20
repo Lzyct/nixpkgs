@@ -92,5 +92,7 @@
     drs = "darwin-rebuild switch --flake ~/.config/nixpkgs/";
     # Flutter related
     dbr = "dart run build_runner build --delete-conflicting-outputs";
+    ft = "flutter test";
+    fc = "flutter clean";
   };
 }
