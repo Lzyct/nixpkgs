@@ -94,5 +94,7 @@
     dbr = "dart run build_runner build --delete-conflicting-outputs";
     ft = "flutter test";
     fc = "flutter clean";
+    fpg = "flutter pub get";
+    nerdfetch ="curl -fsSL https://raw.githubusercontent.com/ThatOneCalculator/NerdFetch/master/nerdfetch | sh";
   };
 }
