@@ -82,6 +82,7 @@ in
     "airbuddy"
     "appcleaner"
     "discord"
+    "betterdiscord-installer"
     "dbeaver-community"
     "docker"
     "dozer"
