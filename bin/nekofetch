@@ -1,0 +1,134 @@
+#!/usr/bin/env fish
+
+set cr "\033[0;0m"
+set c0 "\033[0;30m"
+set c1 "\033[0;31m"
+set c2 "\033[0;32m"
+set c3 "\033[0;33m"
+set c4 "\033[0;34m"
+set c5 "\033[0;35m"
+set c6 "\033[0;36m"
+set c7 "\033[0;37m"
+set cb0 "\033[1;30m"
+set cb1 "\033[1;31m"
+set cb2 "\033[1;32m"
+set cb3 "\033[1;33m"
+set cb4 "\033[1;34m"
+set cb5 "\033[1;35m"
+set cb6 "\033[1;36m"
+set cb7 "\033[1;37m"
+set b0 "\033[40m"
+set b1 "\033[41m"
+set b2 "\033[42m"
+set b3 "\033[43m"
+set b4 "\033[44m"
+set b5 "\033[45m"
+set b6 "\033[46m"
+set b7 "\033[47m"
+
+
+function getusername
+    set username (whoami)
+    echo $username
+end
+
+function gethostname
+    set hostnames (hostname)
+    echo $hostnames
+end
+
+function getseparator
+    set -l _USERNAME (getusername)
+    set -l _HOSTNAME (gethostname)
+    set -l _COUNT (math 2 + (string length $_USERNAME) + (string length $_HOSTNAME))
+    for i in (seq $_COUNT)
+        echo -n "━"
+    end
+    echo
+end
+
+function getdistro
+    set os_version (defaults read /System/Library/CoreServices/SystemVersion.plist ProductVersion)
+    echo "macOS $os_version"
+end
+
+function get_chip_info
+    set -l chip_info (sysctl -n machdep.cpu.brand_string)
+    echo $chip_info
+end
+
+function getshell
+    set shell (basename $SHELL)
+    echo $shell
+end
+
+function getmemory
+    set -l _MEM (free -m | grep 'Mem')
+    set -l _TOTAL (echo $_MEM | awk '{print $2}')
+    set -l _USED (echo $_MEM | awk '{print $3}')
+    set -l _PERCEN (math $_USED \* 100 / $_TOTAL)
+
+    set -l _USEDSHORT (math ceil $_USED);
+    set -l _TOTALSHORT (math ceil $_TOTAL);
+    set -l _PERCENSHORT (math ceil $_PERCEN);
+
+    set memory "$_USEDSHORT MB / $_TOTALSHORT MB ($_PERCENSHORT%)"
+    echo $memory
+end
+
+function get_uptime
+    set linuxtype (uname -s)
+
+    if test "$linuxtype" = "Darwin"
+        set -l uptime (sysctl -n kern.boottime)
+        set -l boottime (string replace -r '^.*sec = (\d+),.*$' '$1' $uptime)
+        set -l current_time (date +%s)
+        set -l uptime_seconds (math $current_time - $boottime)
+        set -l days (math $uptime_seconds / 86400)
+        set -l days_short (math ceil $days)
+        set -l hours (math $uptime_seconds / 3600 % 24)
+        set -l hours_short (math ceil $hours)
+        set -l minutes (math $uptime_seconds / 60 % 60)
+        set -l minutes_short (math ceil $minutes)
+
+        set uptime_text ""
+
+        if test "$days" -gt 0
+            set uptime_text "$days_short day"
+            if test "$days" -gt 1; set uptime_text "$uptime_text""s"; end
+            set uptime_text "$uptime_text, "
+        end
+
+        if test "$hours" -gt 0
+            set uptime_text "$uptime_text$hours_short hour"
+            if test "$hours" -gt 1; set uptime_text "$uptime_text""s"; end
+            set uptime_text "$uptime_text, "
+        end
+
+        if test "$minutes" -gt 0
+            set uptime_text "$uptime_text$minutes_short minute"
+            if test "$minutes" -gt 1; set uptime_text "$uptime_text""s"; end
+        end
+
+        set -l uptime_1 (string trim -r "," $uptime_text)
+        echo (string replace -- $uptime_1 ', ' '' )
+    else
+        echo "Uptime not supported on this operating system"
+    end
+end
+
+
+
+
+echo -e ""
+echo -e "$c7       ▄$b0▀$cr$c7▄     ▄$b0▀$cr$c7▄          $cb2⌜$(getusername)$cr ✖︎ $cb2$(gethostname)⌟"
+echo -e "$c7      ▄█$b5 $b0 █▀█▀█ $b5 $cr$c7█▄         $c4$(getseparator)"
+echo -e "$c7  ▄▄  █$b0           $c7█  ▄▄     $c1$cr $(getdistro)"
+echo -e "$c7 █$b0▄▄█$cr $c7$b0█  ▀  $c1$b0┳$c7$b0  ▀  $cr$c7█ █$b0▄▄$cr$c7█    $c5$cr $(get_chip_info)"
+echo -e "$c3▛▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▜   $c4$cr $(getshell)"
+echo -e "$cb3▌      go to work!      ▐   $c2󰌪$cr $(getmemory)"
+echo -e "$cb3▌   no code, no money   ▐   $c3󰌵$cr $(get_uptime)"
+echo -e "$c3▙▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▟   "
+echo -e "$c7           █$b0 $cr$c7█▄$b0▀$cr$c7▄           $c1████$c2████$c3████$c4████$c5████$c6████"
+echo -e "$c7           ▀$b0▄▄▄▄$cr$c7▀           $c0▀▀▀▀▀▀▀▀▀▀▀▀$c7▀▀▀▀▀▀▀▀▀▀▀▀"
+
