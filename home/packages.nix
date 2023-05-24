@@ -41,6 +41,7 @@
     yarn
     nodejs
     google-cloud-sdk
+    jq
 
     tokei # get information about current project
 

@@ -117,6 +117,43 @@ function get_uptime
     end
 end
 
+function weather
+    set api_key "2388784648482ead211ba3253fea3abe"
+    set location "Makassar"
+
+    set url "https://api.openweathermap.org/data/2.5/weather?q=$location&appid=$api_key&units=metric"
+
+    set weather_info (curl -s $url | jq -r '.weather[0].main')
+    set weather_info_lower (curl -s $url | jq -r '.weather[0].main' | string lower)
+    set temperature (curl -s $url | jq -r '.main.temp')
+    set humidity (curl -s $url | jq -r '.main.humidity')
+
+    set temperature_short (math floor $temperature)
+    # Map weather conditions to icons
+    set -l icon
+    switch $weather_info_lower
+          case string match -r -i "*clear*"
+              set icon "☀️"
+          case string match -r -i "*cloud*"
+              set icon "☁️"
+          case string match -r -i "*rain*"
+              set icon "🌧️"
+          case string match -r -i "*thunderstorm*"
+              set icon "⛈️"
+          case string match -r -i "*snow*"
+              set icon "❄️"
+          case string match -r -i "*mist*"
+              set icon "🌫️"
+          case "*"
+              set icon "❓"
+      end
+      echo "$icon $weather_info $temperature_short °C"
+end
+
+function current_date
+    date "+%d %b '%y"
+end
+
 
 
 
@@ -126,8 +163,8 @@ echo -e "$c7      ▄█$b5 $b0 █▀█▀█ $b5 $cr$c7█▄         $c4$(ge
 echo -e "$c7  ▄▄  █$b0           $c7█  ▄▄     $c1$cr $(getdistro)"
 echo -e "$c7 █$b0▄▄█$cr $c7$b0█  ▀  $c1$b0┳$c7$b0  ▀  $cr$c7█ █$b0▄▄$cr$c7█    $c5$cr $(get_chip_info)"
 echo -e "$c3▛▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▜   $c4$cr $(getshell)"
-echo -e "$cb3▌      go to work!      ▐   $c2󰌪$cr $(getmemory)"
-echo -e "$cb3▌   no code, no money   ▐   $c3󰌵$cr $(get_uptime)"
+echo -e "$cb3▌       $(current_date)      ▐   $c2󰌪$cr $(getmemory)"
+echo -e "$cb3▌     $(weather)   ▐   $c3󰌵$cr $(get_uptime)"
 echo -e "$c3▙▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▟   "
 echo -e "$c7           █$b0 $cr$c7█▄$b0▀$cr$c7▄           $c1████$c2████$c3████$c4████$c5████$c6████"
 echo -e "$c7           ▀$b0▄▄▄▄$cr$c7▀           $c0▀▀▀▀▀▀▀▀▀▀▀▀$c7▀▀▀▀▀▀▀▀▀▀▀▀"
