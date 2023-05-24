@@ -1,4 +1,5 @@
 #!/usr/bin/env fish
+# Reference from this https://github.com/traeanto/dotfiles/blob/main/bin/nekofetch
 
 set cr "\033[0;0m"
 set c0 "\033[0;30m"
