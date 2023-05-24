@@ -147,7 +147,7 @@ function weather
           case "*"
               set icon "❓"
       end
-      echo "$icon  $weather_info $temperature_short °C"
+      echo "$icon  $weather_info $temperature_short°C"
 end
 
 function current_date
@@ -164,7 +164,7 @@ echo -e "$c7  ▄▄  █$b0           $c7█  ▄▄     $c1$cr $(getdistro)
 echo -e "$c7 █$b0▄▄█$cr $c7$b0█  ▀  $c1$b0┳$c7$b0  ▀  $cr$c7█ █$b0▄▄$cr$c7█    $c5$cr $(get_chip_info)"
 echo -e "$c3▛▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▜   $c4$cr $(getshell)"
 echo -e "$cb3▌       $(current_date)      ▐   $c2󰌪$cr $(getmemory)"
-echo -e "$cb3▌     $(weather)   ▐   $c3󰌵$cr $(get_uptime)"
+echo -e "$cb3▌     $(weather)    ▐   $c3󰌵$cr $(get_uptime)"
 echo -e "$c3▙▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▟   "
 echo -e "$c7           █$b0 $cr$c7█▄$b0▀$cr$c7▄           $c1████$c2████$c3████$c4████$c5████$c6████"
 echo -e "$c7           ▀$b0▄▄▄▄$cr$c7▀           $c0▀▀▀▀▀▀▀▀▀▀▀▀$c7▀▀▀▀▀▀▀▀▀▀▀▀"
