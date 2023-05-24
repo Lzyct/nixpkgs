@@ -147,7 +147,7 @@ function weather
           case "*"
               set icon "❓"
       end
-      echo "$icon $weather_info $temperature_short °C"
+      echo "$icon  $weather_info $temperature_short °C"
 end
 
 function current_date
