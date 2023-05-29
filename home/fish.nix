@@ -54,7 +54,7 @@
      set -x PATH $PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
      # Flutter
-     set -x FLUTTER_HOME /Users/$USER/Library/flutter/bin
+     set -x FLUTTER_HOME $HOME/Library/flutter/bin
      set -x PATH $PATH:$FLUTTER_HOME
      set -x PATH "$PATH":"$HOME/.pub-cache/bin"
      
