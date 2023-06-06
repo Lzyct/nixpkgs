@@ -75,6 +75,7 @@
         flutter clean;
         flutter pub get;
         flutter build ipa --flavor $argv -t lib/main_$argv.dart;
+        flutter build appbundle --flavor $argv -t lib/main_$argv.dart
         flutter build apk --flavor $argv -t lib/main_$argv.dart";
     };
     free = {
