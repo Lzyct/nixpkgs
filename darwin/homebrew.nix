@@ -99,6 +99,7 @@ in
     "karabiner-elements"
     "keka"
     "meld"
+    "MonitorControl"
     "notion"
     "orbstack"
     "postman"
