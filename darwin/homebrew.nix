@@ -93,7 +93,7 @@ in
     "google-chrome"
     "grammarly"
     "iina"
-    "intellij-idea-ce"
+    "jetbrains-toolbox"
     "istat-menus"
     "iterm2"
     "karabiner-elements"

@@ -67,9 +67,9 @@
 
   programs.fish.functions = {
     gitignore = "curl -sL https://www.gitignore.io/api/$argv";
-    ic = {
-      body = "idea $argv > /dev/null 2>&1 &";
-    };
+#    ic = {
+#      body = "idea $argv > /dev/null 2>&1 &";
+#    };
     fbuild = {
       body = "
         flutter clean;
