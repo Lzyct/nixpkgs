@@ -123,6 +123,7 @@ in
     "swift-format"
     "swiftlint"
     "cocoapods"
+    "yt-dlp"
     "pkg-config"
     "maven"
   ];
