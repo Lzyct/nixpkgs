@@ -38,6 +38,7 @@ in
     "homebrew/core"
     "homebrew/services"
     "nrlquaker/createzap"
+    "facebook/fb"
   ];
 
   # Prefer installing application from the Mac App Store
@@ -126,5 +127,6 @@ in
     "yt-dlp"
     "pkg-config"
     "maven"
+    "idb-companion"
   ];
 }

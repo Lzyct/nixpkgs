@@ -49,6 +49,9 @@
      # Rust
      set -gx PATH "$HOME/.cargo/bin" $PATH
 
+     # Maestro
+     set -x PATH $PATH $HOME/.maestro/bin
+
      # Android
      set -x ANDROID_HOME /Users/$USER/Library/Android/sdk
      set -x PATH $PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
