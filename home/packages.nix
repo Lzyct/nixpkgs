@@ -53,6 +53,7 @@
     nix-update # swiss-knife for updating nix packages
     nixpkgs-review # review pull-requests on nixpkgs
     statix # lints and suggestions for the Nix programming language
+    starship # cross-shell prompt
 
   ] ++ lib.optionals stdenv.isDarwin [
     # cocoapods preferably installed via homebrew to get latest version
