@@ -70,10 +70,18 @@
 
   programs.fish.functions = {
     gitignore = "curl -sL https://www.gitignore.io/api/$argv";
-#    ic = {
-#      body = "idea $argv > /dev/null 2>&1 &";
-#    };
     fbuild = {
+      body = ''
+        set flavor $argv[1]
+        flutter clean;
+        flutter pub get;
+        flutter build ipa --flavor $flavor --dart-define-from-file .env.$flavor.json;
+        flutter build appbundle --flavor $flavor --dart-define-from-file .env.$flavor.json;
+        flutter build apk --flavor $flavor --dart-define-from-file .env.$flavor.json;
+        ''
+        ;
+    };
+    fbuild-old = {
       body = "
         flutter clean;
         flutter pub get;
