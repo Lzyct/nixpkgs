@@ -268,6 +268,7 @@
         lzyct-config-files = import ./home/config-files.nix;
         lzyct-git = import ./home/git.nix;
         lzyct-fish = import ./home/fish.nix;
+        lzyct-starship = import ./home/starship.nix;
         lzyct-vim = import ./home/vim.nix;
         lzyct-go = import ./home/go.nix;
         lzyct-packages = import ./home/packages.nix;
