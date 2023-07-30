@@ -5,14 +5,23 @@
     enable = true;
     # Configuration written to ~/.config/starship.toml
     settings = {
-      # add_newline = false;
+      add_newline = true;
 
-      # character = {
-      #   success_symbol = "[➜](bold green)";
-      #   error_symbol = "[➜](bold red)";
-      # };
+      character = {
+         success_symbol = "[・➤](bold green)";
+         error_symbol = "[・➤](bold red)";
+       };
 
-      # package.disabled = true;
+      package.disabled = false;
+
+      dart = {
+        format = "via [🔰 $version](bold red) ";
+      };
+
+      gcloud = {
+            format = "";
+      };
+
     };
   };
 }
