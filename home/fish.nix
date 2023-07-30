@@ -65,6 +65,9 @@
      set -x INTELLIJ_IDEA "/Applications/IntelliJ IDEA CE.app/Contents/MacOS"
      set -x PATH $PATH:$INTELLIJ_IDEA
 
+     # Init starship
+     eval "$(starship init fish)"
+
      set fish_greeting
   '';
 
@@ -85,9 +88,9 @@
       body = "
         flutter clean;
         flutter pub get;
-        flutter build ipa --flavor $argv -t lib/main_$argv.dart;
-        flutter build appbundle --flavor $argv -t lib/main_$argv.dart
-        flutter build apk --flavor $argv -t lib/main_$argv.dart";
+        flutter build ipa --flavor $argv -t lib/main_$argv.dart --release;
+        flutter build appbundle --flavor $argv -t lib/main_$argv.dart --release;
+        flutter build apk --flavor $argv -t lib/main_$argv.dart --release;";
     };
     free = {
        body = ''

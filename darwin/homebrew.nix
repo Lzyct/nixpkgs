@@ -128,5 +128,6 @@ in
     "pkg-config"
     "maven"
     "idb-companion"
+    "neovim"
   ];
 }
