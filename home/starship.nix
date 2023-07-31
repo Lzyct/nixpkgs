@@ -149,7 +149,7 @@
            format = ''\[[$symbol]($style)\]'';
          };
          package = {
-           format = ''\[v[$version]($style)\]'';
+           format = ''\[$symbol[$version]($style)\]'';
          };
          perl = {
            format = ''\[[$symbol($version)]($style)\]'';
