@@ -51,6 +51,7 @@
       homeManagerStateVersion = "22.11";
 
       primaryUserInfo = {
+        # username = "lzyct";
         username = "Lzyct";
         fullName = "Lzyct";
         email = "hey.mudassir@gmail.com";
@@ -72,16 +73,27 @@
             # nix.nixPath = { nixpkgs = "${primaryUser.nixConfigDirectory}/nixpkgs.nix"; };
             nix.nixPath = { nixpkgs = "${inputs.nixpkgs-unstable}"; };
             # `home-manager` config
-            users.users.${primaryUser.username}.home = "/Users/${primaryUser.username}";
+            users.users.Lzyct.home = "/Users/Lzyct";
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.${primaryUser.username} = {
+            home-manager.users.Lzyct = {
               imports = attrValues self.homeManagerModules;
               home.stateVersion = homeManagerStateVersion;
               home.user-info = config.users.primaryUser;
             };
             # Add a registry entry for this flake
             nix.registry.my.flake = self;
+            # TODO enable this later and remove the above
+#            users.users.${primaryUser.username}.home = "/Users/${primaryUser.username}";
+#            home-manager.useGlobalPkgs = true;
+#            home-manager.useUserPackages = true;
+#            home-manager.users.${primaryUser.username} = {
+#              imports = attrValues self.homeManagerModules;
+#              home.stateVersion = homeManagerStateVersion;
+#              home.user-info = config.users.primaryUser;
+#            };
+#            # Add a registry entry for this flake
+#            nix.registry.my.flake = self;
           }
         )
       ];
