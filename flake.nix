@@ -51,7 +51,7 @@
       homeManagerStateVersion = "22.11";
 
       primaryUserInfo = {
-        username = "lzyct";
+        username = "Lzyct";
         fullName = "Lzyct";
         email = "hey.mudassir@gmail.com";
         nixConfigDirectory = "/Users/Lzyct/.config/nixpkgs";
