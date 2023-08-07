@@ -81,6 +81,7 @@ in
   # limitiations, e.g., Transmit, install the Homebrew Cask.
   homebrew.casks = [
     "airbuddy"
+    "arc"
     "appcleaner"
     "discord"
     "betterdiscord-installer"
