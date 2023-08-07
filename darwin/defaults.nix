@@ -1,6 +1,6 @@
 {
   system.defaults.NSGlobalDomain = {
-    "com.apple.trackpad.scaling" = 3.0;
+    "com.apple.trackpad.scaling" = 2.9;
     # Disable system theme
     AppleInterfaceStyleSwitchesAutomatically = false;
     AppleMeasurementUnits = "Centimeters";
