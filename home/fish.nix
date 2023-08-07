@@ -56,6 +56,10 @@
      set -x ANDROID_HOME /Users/$USER/Library/Android/sdk
      set -x PATH $PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
+     # IntelliJ IDEA
+     set -gx PATH "$HOME/.local/bin" $PATH
+
+
      # Flutter
      set -x FLUTTER_HOME $HOME/Library/flutter/bin
      set -x PATH $PATH:$FLUTTER_HOME
