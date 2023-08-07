@@ -54,7 +54,7 @@
         username = "lzyct";
         fullName = "Lzyct";
         email = "hey.mudassir@gmail.com";
-        nixConfigDirectory = "/Users/${username}/.config/nixpkgs";
+        nixConfigDirectory = "/Users/lzyct/.config/nixpkgs";
       };
 
       # Modules shared by most `nix-darwin` personal configurations.
