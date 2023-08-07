@@ -32,7 +32,7 @@ in
 
   homebrew.taps = [
     "homebrew/cask"
-    "homebrew/cask-drivers"
+#    "homebrew/cask-drivers"
     "homebrew/cask-fonts"
     "homebrew/cask-versions"
     "homebrew/core"
@@ -85,7 +85,7 @@ in
     "discord"
     "betterdiscord-installer"
     "dbeaver-community"
-    "docker"
+#    "docker"
     "dozer"
     "obsidian"
     "fig"
