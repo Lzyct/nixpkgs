@@ -13,7 +13,7 @@
     _HIHideMenuBar = false;
     AppleShowAllExtensions = true;
     NSAutomaticSpellingCorrectionEnabled = false;
-    AppleFontSmoothing = 2;
+    AppleFontSmoothing = 0;
   };
 
   # Firewall
