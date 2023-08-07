@@ -51,11 +51,10 @@
       homeManagerStateVersion = "22.11";
 
       primaryUserInfo = {
-        # username = "lzyct";
-        username = "Lzyct";
+        username = "lzyct";
         fullName = "Lzyct";
         email = "hey.mudassir@gmail.com";
-        nixConfigDirectory = "/Users/Lzyct/.config/nixpkgs";
+        nixConfigDirectory = "/Users/${username}/.config/nixpkgs";
       };
 
       # Modules shared by most `nix-darwin` personal configurations.
@@ -73,27 +72,16 @@
             # nix.nixPath = { nixpkgs = "${primaryUser.nixConfigDirectory}/nixpkgs.nix"; };
             nix.nixPath = { nixpkgs = "${inputs.nixpkgs-unstable}"; };
             # `home-manager` config
-            users.users.Lzyct.home = "/Users/Lzyct";
+            users.users.${primaryUser.username}.home = "/Users/${primaryUser.username}";
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.Lzyct = {
+            home-manager.users.${primaryUser.username} = {
               imports = attrValues self.homeManagerModules;
               home.stateVersion = homeManagerStateVersion;
               home.user-info = config.users.primaryUser;
             };
             # Add a registry entry for this flake
             nix.registry.my.flake = self;
-            # TODO enable this later and remove the above
-#            users.users.${primaryUser.username}.home = "/Users/${primaryUser.username}";
-#            home-manager.useGlobalPkgs = true;
-#            home-manager.useUserPackages = true;
-#            home-manager.users.${primaryUser.username} = {
-#              imports = attrValues self.homeManagerModules;
-#              home.stateVersion = homeManagerStateVersion;
-#              home.user-info = config.users.primaryUser;
-#            };
-#            # Add a registry entry for this flake
-#            nix.registry.my.flake = self;
           }
         )
       ];
