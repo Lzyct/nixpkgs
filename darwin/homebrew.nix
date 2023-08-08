@@ -93,7 +93,7 @@ in
     "figma"
     "free-download-manager"
     "google-chrome"
-    "grammarly"
+    "grammarly-desktop"
     "iina"
     "jetbrains-toolbox"
     "istat-menus"
