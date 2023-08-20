@@ -126,6 +126,7 @@ in
     "swiftlint"
     "cocoapods"
     "yt-dlp"
+    "fontforge"
     "pkg-config"
     "maven"
     "idb-companion"
