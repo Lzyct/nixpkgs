@@ -96,6 +96,7 @@
         flutter build appbundle --flavor $argv -t lib/main_$argv.dart --release;
         flutter build apk --flavor $argv -t lib/main_$argv.dart --release;";
     };
+    font-nerd-patch = "docker run --rm -v $PWD/ttf:/in -v $PWD/ttf:/out nerdfonts/patcher --complete";
     free = {
        body = ''
         if test (uname) = "Darwin"
