@@ -73,7 +73,8 @@ substituters = https://cache.nixos.org https://cache.nixos.org/ https://r17.cach
 ```
 
 ### Setup
-
+- If you run on **Apple Silicon** machine, make sure you're already enabled Rosetta `softwareupdate --install-rosetta`
+- Then reboot your machine
 - Clone [this repository](https://github.com/Lzyct/nixpkgs)
 
 ```console
