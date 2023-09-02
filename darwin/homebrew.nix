@@ -85,6 +85,7 @@ in
     "appcleaner"
     "discord"
     "betterdiscord-installer"
+    "cheatsheet"
     "dbeaver-community"
 #    "docker"
     "dozer"
