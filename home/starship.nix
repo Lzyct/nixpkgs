@@ -8,7 +8,7 @@
       add_newline = true;
 
       character = {
-         success_symbol = ''[ »](bold blue)'';
+         success_symbol = ''[ »](bold yellow)'';
          error_symbol = ''[ »](bold red)'';
        };
 
