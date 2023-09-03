@@ -88,7 +88,7 @@ in
     "cheatsheet"
     "dbeaver-community"
 #    "docker"
-    "vanilla"
+    "dozer"
     "obsidian"
     "fig"
     "figma"
