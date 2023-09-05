@@ -87,6 +87,7 @@ in
     "betterdiscord-installer"
     "cheatsheet"
     "dbeaver-community"
+    "keycastr"
 #    "docker"
     "dozer"
     "obsidian"
