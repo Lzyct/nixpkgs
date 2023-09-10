@@ -10,10 +10,19 @@
     NSAutomaticCapitalizationEnabled = false;
     NSAutomaticDashSubstitutionEnabled = false;
     NSAutomaticPeriodSubstitutionEnabled = false;
+    NSAutomaticSpellingCorrectionEnabled = false;
     _HIHideMenuBar = false;
     AppleShowAllExtensions = true;
-    NSAutomaticSpellingCorrectionEnabled = false;
     AppleFontSmoothing = 0;
+    AppleICUForce24HourTime=false;
+  };
+
+  system.defaults.SoftwareUpdate.AutomaticallyInstallMacOSUpdates = true;
+
+  system.defaults.menuExtraClock = {
+    IsAnalog = true;
+    Show24Hour= false;
+    ShowAMPM = true;
   };
 
   # Firewall
@@ -59,6 +68,9 @@
   # Finder
   system.defaults.finder = {
     FXEnableExtensionChangeWarning = true;
+    AppleShowAllExtensions = true;
+    ShowStatusBar = true;
+    ShowPathbar = true;
   };
 }
 
