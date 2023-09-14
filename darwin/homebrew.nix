@@ -39,6 +39,7 @@ in
     "homebrew/services"
     "nrlquaker/createzap"
     "facebook/fb"
+    "oven-sh/bun"
   ];
 
   # Prefer installing application from the Mac App Store
@@ -133,5 +134,6 @@ in
     "maven"
     "idb-companion"
     "neovim"
+    "bun"
   ];
 }
