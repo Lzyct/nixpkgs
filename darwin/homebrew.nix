@@ -135,5 +135,6 @@ in
     "idb-companion"
     "neovim"
     "bun"
+    "libpq" # execute this: brew link --force libpq
   ];
 }
