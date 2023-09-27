@@ -42,6 +42,7 @@
     nodejs
     google-cloud-sdk
     jq
+    gnupg
 
     tokei # get information about current project
 
