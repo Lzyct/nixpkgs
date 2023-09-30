@@ -88,6 +88,8 @@
         ''
         ;
     };
+    ytd = '' yt-dlp --ignore-errors --format bestaudio --extract-audio --audio-format mp3 --audio-quality best "$argv[1]" '';
+    ytd-pl ='' yt-dlp --ignore-errors --format bestaudio --extract-audio --audio-format mp3 --audio-quality best --yes-playlist "$argv[1]"'';
     fbuild-old = {
       body = "
         flutter clean;
