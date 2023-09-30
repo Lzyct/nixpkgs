@@ -131,6 +131,8 @@ in
     "yt-dlp"
     "fontforge"
     "pkg-config"
+    "fprobe"
+    "ffmpeg"
     "maven"
     "idb-companion"
     "neovim"
