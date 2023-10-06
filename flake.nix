@@ -48,7 +48,7 @@
         ];
       };
 
-      homeManagerStateVersion = "22.11";
+      homeManagerStateVersion = "23.05";
 
       primaryUserInfo = {
         username = "lzyct";

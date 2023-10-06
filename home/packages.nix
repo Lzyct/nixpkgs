@@ -33,7 +33,7 @@
     curl
     tree
     cascadia-code
-    exa # fancy version of `ls`
+    eza # fancy version of `ls`
     fd # fancy version of `find`
     htop # fancy version of `top`
     neofetch

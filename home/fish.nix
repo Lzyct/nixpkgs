@@ -157,7 +157,7 @@
 
   # Fish alias : register alias command in fish
   programs.fish.shellAliases = {
-    ls = "${pkgs.exa}/bin/exa --color=auto --group-directories-first --classify --icons";
+    ls = "${pkgs.eza}/bin/exa --color=auto --group-directories-first --classify --icons";
     intel = "arch -x86_64";
     fixaudio = "sudo launchctl stop com.apple.audio.coreaudiod && sudo launchctl start com.apple.audio.coreaudiod";
     # Nix related
