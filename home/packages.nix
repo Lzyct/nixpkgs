@@ -33,7 +33,7 @@
     curl
     tree
     cascadia-code
-    eza # fancy version of `ls`
+    #eza # fancy version of `ls` replace with lsd
     fd # fancy version of `find`
     htop # fancy version of `top`
     neofetch
@@ -43,6 +43,7 @@
     google-cloud-sdk
     jq
     gnupg
+    lsd # fancy version of `ls`
 
     tokei # get information about current project
 
