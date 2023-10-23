@@ -28,7 +28,7 @@ in
 #  homebrew.onActivation.autoUpdate = true;
   homebrew.onActivation.cleanup = "zap";
   homebrew.global.brewfile = true;
-  homebrew.global.autoUpdate = true;
+#  homebrew.global.autoUpdate = true;
 #  homebrew.onActivation.upgrade = true;
 
 
@@ -78,6 +78,10 @@ in
     # "WiFi Explorer" = 494803304;
     # Xcode = 497799835;
     # "Yubico Authenticator" = 1497506650;
+    Spark = 1176895641;
+    "SpeakerAmp:Booster & Equalizer" = 1496955576;
+    Guidance = 412759995;
+    Fresco = 1251572132;
   };
 
   # If an app isn't available in the Mac App Store, or the version in the App Store has
