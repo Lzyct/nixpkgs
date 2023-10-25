@@ -112,6 +112,7 @@ in
     "meld"
     "MonitorControl"
     "notion"
+    "intellidock"
     "orbstack"
     "postman"
     "rectangle"
