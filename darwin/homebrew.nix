@@ -90,7 +90,7 @@ in
     "airbuddy"
     "arc"
     "appcleaner"
-    "bartender"
+#    "bartender" # enable it later
     "discord"
     "betterdiscord-installer"
     "cheatsheet"
