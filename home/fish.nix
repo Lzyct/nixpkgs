@@ -88,6 +88,33 @@
         ''
         ;
     };
+    fbuild-apk = {
+          body = ''
+            set flavor $argv[1]
+            flutter clean;
+            flutter pub get;
+            flutter build apk --flavor $flavor --dart-define-from-file .env.$flavor.json;
+            ''
+            ;
+        };
+    fbuild-aab = {
+          body = ''
+            set flavor $argv[1]
+            flutter clean;
+            flutter pub get;
+            flutter build appbundle --flavor $flavor --dart-define-from-file .env.$flavor.json;
+            ''
+            ;
+        };
+    fbuild-ipa = {
+           body = ''
+             set flavor $argv[1]
+             flutter clean;
+             flutter pub get;
+             flutter build ipa --flavor $flavor --dart-define-from-file .env.$flavor.json;
+             ''
+             ;
+         };
     ytd = '' yt-dlp --ignore-errors --format bestaudio --extract-audio --audio-format mp3 --audio-quality best "$argv[1]" '';
     ytd-pl ='' yt-dlp --ignore-errors --format bestaudio --extract-audio --audio-format mp3 --audio-quality best --yes-playlist "$argv[1]"'';
     fbuild-old = {
