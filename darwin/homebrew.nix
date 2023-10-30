@@ -78,6 +78,7 @@ in
     # "WiFi Explorer" = 494803304;
     # Xcode = 497799835;
     # "Yubico Authenticator" = 1497506650;
+    ColorSlurp = 1287239339;
     Spark = 1176895641;
     "SpeakerAmp:Booster & Equalizer" = 1496955576;
     Guidance = 412759995;
