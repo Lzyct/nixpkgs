@@ -59,6 +59,9 @@
      # IntelliJ IDEA
      set -gx PATH "$HOME/.local/bin" $PATH
 
+     # libq
+     set -x PATH /opt/homebrew/opt/libpq/bin $PATH
+
 
      # Flutter
      set -x FLUTTER_HOME $HOME/Library/flutter/bin
