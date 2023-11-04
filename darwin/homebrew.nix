@@ -119,11 +119,11 @@ in
     "postman"
     "rectangle"
     "insomnia"
-    "telegram"
+#    "telegram"
     "raycast"
     # "upwork" issue install from homebrew
     "visual-studio-code"
-    "whatsapp"
+#    "whatsapp"
     "obs"
   ];
 
