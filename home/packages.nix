@@ -45,7 +45,7 @@
     gnupg
     lsd # fancy version of `ls`
 
-    tokei # get information about current project
+#    tokei # get information about current project
 
     # Useful nix related tools
     cachix # adding/managing alternative binary caches hosted by Cachix
