@@ -4,10 +4,11 @@
 
 {
   # Networking
-  networking.dns = [
-    "1.1.1.1"
-    "8.8.8.8"
-  ];
+  ## Disable this config due issue with Biznet ISP
+#  networking.dns = [
+#    "1.1.1.1"
+#    "8.8.8.8"
+#  ];
 
   # Apps
   # `home-manager` currently has issues adding them to `~/Applications`
