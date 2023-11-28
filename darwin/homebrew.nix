@@ -114,7 +114,7 @@ in
     "meld"
     "MonitorControl"
     "notion"
-    "intellidock"
+#    "intellidock" # disable until this fixed
     "orbstack"
     "postman"
     "rectangle"
