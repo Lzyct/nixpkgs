@@ -79,10 +79,11 @@ in
     # Xcode = 497799835;
     # "Yubico Authenticator" = 1497506650;
     ColorSlurp = 1287239339;
-    Spark = 1176895641;
+    Spark = 6445813049;
     "SpeakerAmp:Booster & Equalizer" = 1496955576;
     Guidance = 412759995;
     Fresco = 1251572132;
+
   };
 
   # If an app isn't available in the Mac App Store, or the version in the App Store has
@@ -91,7 +92,7 @@ in
     "airbuddy"
     "arc"
     "appcleaner"
-    "bartender" # enable it later
+#    "bartender" # enable it later
     "discord"
     "betterdiscord-installer"
     "cheatsheet"
