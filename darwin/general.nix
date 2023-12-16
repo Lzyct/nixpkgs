@@ -7,7 +7,7 @@
   ## Disable this config due issue with Biznet ISP
   networking.dns = [
 #    "1.1.1.1"
-    "8.8.8.8"
+#    "8.8.8.8"
   ];
 
   # Apps
