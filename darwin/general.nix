@@ -5,7 +5,9 @@
 {
   # Networking
   ## Disable this config due issue with Biznet ISP
+  ## https://github.com/bebasid/bebasdns?tab=readme-ov-file#peladen-utama
   networking.dns = [
+  "103.87.68.193"
 #    "1.1.1.1"
 #    "8.8.8.8"
   ];
