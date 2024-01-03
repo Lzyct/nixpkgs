@@ -92,7 +92,7 @@ in
     "airbuddy"
     "arc"
     "appcleaner"
-#    "bartender" # enable it later
+    "bartender" # enable it later
     "discord"
     "betterdiscord-installer"
     "cheatsheet"
@@ -101,7 +101,7 @@ in
 #    "docker"
 #    "dozer"
     "obsidian"
-    "fig"
+    #"fig"
     "figma"
     "free-download-manager"
     "google-chrome"
