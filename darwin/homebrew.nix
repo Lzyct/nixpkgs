@@ -146,6 +146,7 @@ in
     "maven"
     "idb-companion"
     "neovim"
+    "scrcpy"
     "bun"
     "libpq" # execute this: brew link --force libpq
   ];
