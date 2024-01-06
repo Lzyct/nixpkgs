@@ -45,7 +45,7 @@
     wvous-tl-corner = 1;
     wvous-tr-corner = 1;
     autohide-delay = 0.0;
-    orientation = "left";
+    orientation = "right";
   };
 
   # Login and lock screen
