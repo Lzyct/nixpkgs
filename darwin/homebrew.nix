@@ -80,7 +80,7 @@ in
     # "Yubico Authenticator" = 1497506650;
     ColorSlurp = 1287239339;
     Spark = 6445813049;
-    "SpeakerAmp:Booster & Equalizer" = 1496955576;
+#    "SpeakerAmp:Booster & Equalizer" = 1496955576;
     Guidance = 412759995;
     Fresco = 1251572132;
 
