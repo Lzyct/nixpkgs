@@ -83,7 +83,8 @@ in
 #    "SpeakerAmp:Booster & Equalizer" = 1496955576;
     Guidance = 412759995;
     Fresco = 1251572132;
-#    Boom3D = 1233048948;  # enable it later
+#    Boom3D = 1233048948;
+#    BalanceLock = 1019371109;
 
   };
 
