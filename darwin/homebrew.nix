@@ -83,7 +83,7 @@ in
 #    "SpeakerAmp:Booster & Equalizer" = 1496955576;
     Guidance = 412759995;
     Fresco = 1251572132;
-    Boom3D = 1233048948;
+#    Boom3D = 1233048948;  # enable it later
 
   };
 
@@ -93,7 +93,7 @@ in
     "airbuddy"
     "arc"
     "appcleaner"
-    "bartender" # enable it later
+    #"bartender" # enable it later
     "discord"
     "betterdiscord-installer"
     "cheatsheet"
