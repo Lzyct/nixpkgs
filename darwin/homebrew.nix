@@ -112,6 +112,7 @@ in
     "jetbrains-toolbox"
     "istat-menus"
     "iterm2"
+    "logi-options-plus"
     "karabiner-elements"
     "keka"
     "meld"
@@ -150,6 +151,7 @@ in
     "neovim"
     "scrcpy"
     "bun"
+    "mtr"
     "libpq" # execute this: brew link --force libpq
   ];
 }
