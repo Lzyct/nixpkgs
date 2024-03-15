@@ -42,6 +42,7 @@ in
     "nrlquaker/createzap"
     "facebook/fb"
     "oven-sh/bun"
+    "PlayCover/playcover"
   ];
 
   # Prefer installing application from the Mac App Store
@@ -121,6 +122,7 @@ in
 #    "intellidock" # disable until this fixed
     "orbstack"
     "postman"
+    "playcover-nightly"
     "rectangle"
     "insomnia"
 #    "telegram"
