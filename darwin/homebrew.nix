@@ -33,11 +33,11 @@ in
 
 
   homebrew.taps = [
-    "homebrew/cask"
+#    "homebrew/cask"
 #    "homebrew/cask-drivers"
     "homebrew/cask-fonts"
     "homebrew/cask-versions"
-    "homebrew/core"
+#    "homebrew/core"
     "homebrew/services"
     "nrlquaker/createzap"
     "facebook/fb"
