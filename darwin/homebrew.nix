@@ -131,6 +131,7 @@ in
     "visual-studio-code"
 #    "whatsapp"
     "obs"
+    "whisky"
   ];
 
   # Configuration related to casks
