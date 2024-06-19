@@ -23,8 +23,8 @@
   programs.nix-index.enable = true;
 
   # Fonts TEMPORARY DISABLE THIS CONFIG not working on Ventura
-  fonts.fontDir.enable = true;
-  fonts.fonts = with pkgs; [
+  # fonts.fontDir.enable = true;
+  fonts.packages = with pkgs; [
      recursive
      (nerdfonts.override { fonts = [ "JetBrainsMono" "FiraCode" "Hack" ]; })
    ];

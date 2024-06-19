@@ -33,7 +33,7 @@ in
 
 
   homebrew.taps = [
-#    "homebrew/cask"
+    "homebrew/cask"
 #    "homebrew/cask-drivers"
     "homebrew/cask-fonts"
     "homebrew/cask-versions"
@@ -110,6 +110,7 @@ in
     #"fig"
     "figma"
     "free-download-manager"
+    "font-monaspace"
     "google-chrome"
     "grammarly-desktop"
     "iina"
@@ -152,7 +153,6 @@ in
     "pkg-config"
     "fprobe"
     "gh"
-    "font-monaspace"
     "ffmpeg"
     "maven"
     "idb-companion"
