@@ -1,6 +1,6 @@
 {
   system.defaults.NSGlobalDomain = {
-    "com.apple.trackpad.scaling" = 30.0;
+    "com.apple.trackpad.scaling" = 3;
     # Disable system theme
     AppleInterfaceStyleSwitchesAutomatically = false;
     AppleMeasurementUnits = "Centimeters";
@@ -62,7 +62,8 @@
     Clicking = false;
     TrackpadRightClick = true;
     # Enable silent click on trackpad
-    ActuationStrength = 0;
+    # 0 to enable Silent Clicking, 1 to disable.  The default is 1.
+    ActuationStrength = 1;
   };
 
   # Finder
