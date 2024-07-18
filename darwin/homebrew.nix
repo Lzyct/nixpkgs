@@ -42,7 +42,7 @@ in
     "nrlquaker/createzap"
     "facebook/fb"
     "oven-sh/bun"
-    "PlayCover/playcover"
+    # "PlayCover/playcover"
   ];
 
   # Prefer installing application from the Mac App Store
@@ -66,6 +66,7 @@ in
     # MindNode = 1289197285;
     # Numbers = 409203825;
     # Pages = 409201541;
+    # Patterns = 429449079;
     # Patterns = 429449079;
     # "Pixelmator Classic" = 407963104;
     # "Pixelmator Pro" = 1289583905;
@@ -111,7 +112,7 @@ in
     "figma"
     "free-download-manager"
     "font-monaspace"
-    "google-chrome"
+    # "google-chrome"
     "grammarly-desktop"
     "iina"
     "jetbrains-toolbox"
@@ -126,9 +127,9 @@ in
 #    "intellidock" # disable until this fixed
     "orbstack"
     "postman"
-    "playcover-nightly"
+    # "playcover-nightly"
     "rectangle"
-    "insomnia"
+    # "insomnia"
 #    "telegram"
     "raycast"
     # "upwork" issue install from homebrew
