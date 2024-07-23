@@ -159,6 +159,7 @@ in
     "idb-companion"
     "neovim"
     "scrcpy"
+    "nodejs"
     "bun"
     "mtr"
     "libpq" # execute this: brew link --force libpq

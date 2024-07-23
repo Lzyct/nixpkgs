@@ -38,8 +38,8 @@
     htop # fancy version of `top`
     neofetch
     wget
-    yarn
-    nodejs
+    #yarn prefer to use homebrew version
+    #nodejs prefer to use homebrew version
     google-cloud-sdk
     jq
     gnupg
