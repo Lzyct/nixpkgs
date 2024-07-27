@@ -122,6 +122,7 @@ in
     "karabiner-elements"
     "keka"
     "meld"
+    "mos"
     "MonitorControl"
     "notion"
 #    "intellidock" # disable until this fixed
