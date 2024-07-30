@@ -128,6 +128,13 @@
         flutter build appbundle --flavor $argv -t lib/main_$argv.dart --release;
         flutter build apk --flavor $argv -t lib/main_$argv.dart --release;";
     };
+    git-airasia ={
+        body ="
+            git config --local user.name Mudassir;
+            git config --local user.email mudassir@airasia.com;
+            echo 'Git local config set to AirAsia with name Mudassir and email mudassir@airasia.com';
+        ";
+    };
     font-nerd-patch = "docker run --rm -v $PWD/ttf:/in -v $PWD/ttf:/out nerdfonts/patcher --complete";
     free = {
        body = ''
