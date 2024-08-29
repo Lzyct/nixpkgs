@@ -118,7 +118,7 @@ in
     "jetbrains-toolbox"
     "istat-menus"
     "iterm2"
-    "logi-options-plus"
+    "logi-options+"
     "karabiner-elements"
     "keka"
     "meld"
@@ -162,6 +162,7 @@ in
     "scrcpy"
     "nodejs"
     "bun"
+    "yarn"
     "mtr"
     "libpq" # execute this: brew link --force libpq
   ];
