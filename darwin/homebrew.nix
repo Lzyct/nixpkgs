@@ -80,6 +80,7 @@ in
     # "WiFi Explorer" = 494803304;
     # Xcode = 497799835;
     # "Yubico Authenticator" = 1497506650;
+    Amphetamine = 937984704;
     ColorSlurp = 1287239339;
     Spark = 6445813049;
 #    "SpeakerAmp:Booster & Equalizer" = 1496955576;
@@ -102,7 +103,7 @@ in
     "betterdiscord-installer"
     "cheatsheet"
     "copilot-for-xcode"
-#    "dbeaver-community"
+    "dbeaver-community"
     "beekeeper-studio"
     "keycastr"
 #    "docker"
@@ -160,6 +161,7 @@ in
     "idb-companion"
     "neovim"
     "scrcpy"
+    "pinentry-mac"
     "nodejs"
     "bun"
     "yarn"
