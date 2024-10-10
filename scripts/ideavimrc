@@ -25,11 +25,12 @@ nnoremap <c-z> :action ToggleDistractionFreeMode<cr>
 """ Surround Plugin  --------------------------------
 " Emulates vim-surround. Mappings to easily delete, change and add such surroundings in pairs
 " Basic Commands:
-"   cs   Change surroundings
-"   cst  Change surroundings tag
-"   ds   Delete surroundings
-"   dst  Delete surroundings tag
-"   ys   Surround text object
+"  Old text                  Command     New text ~
+"  "Hello *world!"           ds"         Hello world!
+"  [123+4*56]/2              cs])        (123+456)/2
+"  "Look ma, I'm *HTML!"     cs"<q>      <q>Look ma, I'm HTML!</q>
+"  if *x>3 {                 ysW(        if ( x>3 ) {
+"  my $str = *whee!;         vllllS'     my $str = 'whee!';
 " See https://github.com/tpope/vim-surround/blob/master/doc/surround.txt for details
 set surround
 
@@ -129,7 +130,7 @@ let g:WhichKey_ShowVimActions = "true"
 let g:WhichKey_FontFamily = "MonoLisaAlt Nerd Font"
 let g:WhichKey_FontSize = 14
 let g:WhichKey_CommandColor = "#a6e3a1"
-let g:WhichKey_PrefixColor = "#cba6f7"
+let g:WhichKey_PrefixColor = "#eba0ac"
 let g:WhichKey_SortOrder = "by_key_prefix_first"
 
 let g:WhichKeyDesc_leader = "<leader> Leader key"
