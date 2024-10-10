@@ -141,6 +141,11 @@ let g:WhichKeyDesc_leader = "<leader>/ Find in file"
 let g:WhichKeyDesc_easymotion = "<leader>j Jump with Easymotion"
 let g:WhichKeyDesc_easymotion_prefix = "<leader><leader>"
 
+let g:WhichKeyDesc_multiple_cursor = "m Multiple cursors"
+let g:WhichKeyDesc_multiple_cursor_next = "mc selects the next match"
+let g:WhichKeyDesc_multiple_cursor_skip = "mx skips to the next match"
+let g:WhichKeyDesc_multiple_cursor_remove = "mp removes current match and goes back to the previous one"
+
 let g:WhichKeyDesc_comment = "<leader>c Comment line"
 
 let g:WhichKeyDesc_fold = "<leader>z Folding"
