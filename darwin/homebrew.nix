@@ -167,5 +167,6 @@ in
     "yarn"
     "mtr"
     "libpq" # execute this: brew link --force libpq
+    "lcov"
   ];
 }
