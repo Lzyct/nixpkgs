@@ -146,6 +146,8 @@ let g:WhichKeyDesc_multiple_cursor_next = "mc selects the next match"
 let g:WhichKeyDesc_multiple_cursor_skip = "mx skips to the next match"
 let g:WhichKeyDesc_multiple_cursor_remove = "mp removes current match and goes back to the previous one"
 
+let g:WhichKeyDesc_open_in_terminal = "<leader>t Open in terminal"
+
 let g:WhichKeyDesc_comment = "<leader>c Comment line"
 
 let g:WhichKeyDesc_fold = "<leader>z Folding"
@@ -198,6 +200,7 @@ let g:WhichKeyDesc_goto_forward = "<leader>gf Go Forward"
 let g:WhichKeyDesc_errors = "<leader>e Error navigation"
 let g:WhichKeyDesc_errors_next = "<leader>en Go to next error in solution"
 let g:WhichKeyDesc_errors_prev = "<leader>ep Go to previous error in solution"
+
 " EasyMotion settings
 set easymotion
 set notimeout
@@ -297,7 +300,6 @@ nmap <leader>d :action ShowErrorDescription<cr>
 nmap <leader>i :action GotoImplementation<cr>
 nmap <leader>I :action SelectIn<cr>
 nmap <leader>e :action RecentFiles<cr>
-nmap <leader>t :action GotoTest<cr>
 nmap <leader>p :action JumpToLastWindow<cr>
 nmap <leader>b :action ShowBookmarks<cr>
 " nmap <leader>a :action Switcher<cr>
