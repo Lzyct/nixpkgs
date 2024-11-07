@@ -24,12 +24,15 @@ in
     end
   '';
 
-  homebrew.enable = true;
-#  homebrew.onActivation.autoUpdate = true;
-  homebrew.onActivation.cleanup = "zap";
-  homebrew.global.brewfile = true;
-#  homebrew.global.autoUpdate = true;
-#  homebrew.onActivation.upgrade = true;
+
+homebrew = {
+    enable = true;
+    onActivation = {
+        autoUpdate = true;
+        cleanup = "uninstall";
+        upgrade = true;
+    };
+};
 
 
   homebrew.taps = [
