@@ -100,6 +100,7 @@ homebrew = {
     "alt-tab"
     "airbuddy"
     "arc"
+    "aldente"
     "appcleaner"
     #"bartender" # enable it later
     "discord"
@@ -128,7 +129,8 @@ homebrew = {
     "meld"
     "mos"
     "MonitorControl"
-    "notion"
+    "notchnook"
+    #"notion"
 #    "intellidock" # disable until this fixed
     "orbstack"
     "postman"
