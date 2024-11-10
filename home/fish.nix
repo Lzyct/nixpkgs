@@ -46,6 +46,9 @@
      set -x LC_ALL en_US.UTF-8
      set -x LANG en_US.UTF-8
 
+     # Homebrew
+     set -x PATH /opt/homebrew/bin $PATH
+
      # Rust
      set -gx PATH "$HOME/.cargo/bin" $PATH
 
