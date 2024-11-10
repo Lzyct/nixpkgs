@@ -36,10 +36,26 @@ This is my personal configuration with [nix](https://nixos.org/) using [**flakes
 
 #### **Nix**
 
+##### using Nix Flake
+
+If you are not familiar with Nix, it is recommended to read [this onboard by zero-to-nix](https://zero-to-nix.com/start/install) to get started.
+
+But if you want to use Nix, go jump to command below:
+
+```console
+curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+```
+
+##### using Legacy Nix
+
+<details>
+    <summary>Click to expand</summary>
+
+
 | System                                         | Single User | Multiple User | Command                                                             |
-| ---------------------------------------------- | ----------- | ------------- | ------------------------------------------------------------------- |
-| **Linux**                                      | ✅          | ✅            | [Single User](#linux-single-user) • [Multi User](#linux-multi-user) |
-| **Darwin** (MacOS)                             | ❌          | ✅            | [Multi User](#darwin-multi-user)                                    |
+|------------------------------------------------|-------------|---------------|---------------------------------------------------------------------|
+| **Linux**                                      | ✅           | ✅             | [Single User](#linux-single-user) • [Multi User](#linux-multi-user) |
+| **Darwin** (MacOS)                             | ❌           | ✅             | [Multi User](#darwin-multi-user)                                    |
 | [**More...**](https://nixos.org/download.html) |             |               |                                                                     |
 
 ##### Linux Single User
@@ -63,7 +79,16 @@ sh <(curl -L https://nixos.org/nix/install)
 #### Enable `experimental-features`
 
 In general installation of nix, the nix configuration is located in `~/.config/nix/nix.conf`.
-You **MUST** be set the `experimental-features` before use [this configuration](https://github.com/r17x/nixpkgs).
+You **MUST** be set the `experimental-features` before use [this configuration](https://github.com/r17x/universe).
+
+```cfg
+experimental-features = nix-command flakes
+
+// (optional) for distribution cache (DON'T COPY THIS COMMENT LINE)
+substituters = https://cache.nixos.org https://cache.nixos.org/ https://r17.cachix.org
+```
+
+</details>
 
 ```cfg
 experimental-features = nix-command flakes
