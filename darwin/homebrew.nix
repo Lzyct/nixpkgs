@@ -100,8 +100,8 @@ homebrew = {
     "alt-tab"
     "airbuddy"
     "arc"
-    "aldente"
-    "appcleaner"
+#    "aldente"
+    "pearcleaner"
     "bartender" # enable it later
     "discord"
     "betterdiscord-installer"
@@ -140,7 +140,7 @@ homebrew = {
 #    "telegram"
     "raycast"
     # "upwork" issue install from homebrew
-    "visual-studio-code"
+#    "visual-studio-code"
 #    "whatsapp"
     "obs"
     "whisky"
