@@ -46,6 +46,12 @@ But if you want to use Nix, go jump to command below:
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
 ```
 
+- Fix macOS sequoia
+```bash
+curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- repair sequoia --move-existing-users
+```
+
+
 ##### using Legacy Nix
 
 <details>
@@ -87,15 +93,9 @@ experimental-features = nix-command flakes
 // (optional) for distribution cache (DON'T COPY THIS COMMENT LINE)
 substituters = https://cache.nixos.org https://cache.nixos.org/ https://r17.cachix.org
 ```
-
 </details>
 
-```cfg
-experimental-features = nix-command flakes
 
-// (optional) for distribution cache (DON'T COPY THIS COMMENT LINE)
-substituters = https://cache.nixos.org https://cache.nixos.org/ https://r17.cachix.org
-```
 
 ### Setup
 - If you run on **Apple Silicon** machine, make sure you're already enabled Rosetta `softwareupdate --install-rosetta`
@@ -136,11 +136,6 @@ nix build .#darwinConfigurations.Lzyct.system
 
 ```console
 ./result/sw/bin/darwin-rebuild switch --flake .#Lzyct
-```
-
-- Fix macOS sequoia
-```bash
-curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- repair sequoia --move-existing-users
 ```
 
 - Done 🚀🎉
