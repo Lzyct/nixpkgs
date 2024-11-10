@@ -108,7 +108,7 @@ homebrew = {
 #    "cheatsheet"
     "copilot-for-xcode"
     "dbeaver-community"
-    "beekeeper-studio"
+#    "beekeeper-studio"
     "keycastr"
 #    "docker"
 #    "dozer"
