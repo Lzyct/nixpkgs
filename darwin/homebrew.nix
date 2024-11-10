@@ -102,10 +102,10 @@ homebrew = {
     "arc"
     "aldente"
     "appcleaner"
-    #"bartender" # enable it later
+    "bartender" # enable it later
     "discord"
     "betterdiscord-installer"
-    "cheatsheet"
+#    "cheatsheet"
     "copilot-for-xcode"
     "dbeaver-community"
     "beekeeper-studio"
@@ -126,7 +126,7 @@ homebrew = {
     "logi-options+"
     "karabiner-elements"
     "keka"
-    "meld"
+#    "meld"
     "mos"
     "MonitorControl"
     "notchnook"
