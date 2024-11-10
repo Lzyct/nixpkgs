@@ -102,6 +102,7 @@ substituters = https://cache.nixos.org https://cache.nixos.org/ https://r17.cach
 - Then reboot your machine
 - Clone [this repository](https://github.com/Lzyct/nixpkgs)
 
+
 ```console
 // with SSH
 
@@ -135,6 +136,11 @@ nix build .#darwinConfigurations.Lzyct.system
 
 ```console
 ./result/sw/bin/darwin-rebuild switch --flake .#Lzyct
+```
+
+- Fix macOS sequoia
+```bash
+curl --proto '=https' --tlsv1.2 -sSf -L https://github.com/NixOS/nix/raw/master/scripts/sequoia-nixbld-user-migration.sh | bash -                            2m 4s
 ```
 
 - Done 🚀🎉
