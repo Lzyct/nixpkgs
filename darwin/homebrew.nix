@@ -100,9 +100,9 @@ homebrew = {
     "alt-tab"
     "airbuddy"
     "arc"
-    "aldente"
+  #  "aldente"
     "appcleaner"
-    "bartender" # enable it later
+ #   "bartender" # enable it later
     "discord"
     "betterdiscord-installer"
 #    "cheatsheet"
@@ -129,7 +129,7 @@ homebrew = {
 #    "meld"
     "mos"
     "MonitorControl"
-    "notchnook"
+  #  "notchnook"
     #"notion"
 #    "intellidock" # disable until this fixed
     "orbstack"
