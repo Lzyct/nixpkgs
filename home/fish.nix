@@ -190,6 +190,13 @@
     	end
        '';
     };
+    ga-aa = {
+    body = ''
+        git config --local user.name Mudassir
+        git config --local user.email mudassir@airasia.com
+        ''
+        ;
+    };
   };
 
   # Fish abbreviations
