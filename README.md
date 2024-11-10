@@ -140,7 +140,7 @@ nix build .#darwinConfigurations.Lzyct.system
 
 - Fix macOS sequoia
 ```bash
-curl --proto '=https' --tlsv1.2 -sSf -L https://github.com/NixOS/nix/raw/master/scripts/sequoia-nixbld-user-migration.sh | bash -                            2m 4s
+curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- repair sequoia --move-existing-users
 ```
 
 - Done 🚀🎉
