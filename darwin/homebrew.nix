@@ -45,6 +45,7 @@ homebrew = {
     "nrlquaker/createzap"
     "facebook/fb"
     "oven-sh/bun"
+    "mobile-dev-inc/tap"
     # "PlayCover/playcover"
   ];
 
@@ -100,7 +101,7 @@ homebrew = {
     "alt-tab"
     "airbuddy"
     "arc"
-#    "aldente"
+    "aldente"
     "pearcleaner"
     "bartender" # enable it later
     "discord"
@@ -163,6 +164,7 @@ homebrew = {
     "gh"
     "ffmpeg"
     "maven"
+    "maestro"
     "idb-companion"
     "neovim"
     "scrcpy"
