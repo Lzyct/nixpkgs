@@ -46,6 +46,9 @@
     wvous-tr-corner = 1;
     autohide-delay = 0.0;
     orientation = "right";
+    persistent-apps = [
+      "/System/Applications/iPhone Mirroring.app"
+      ];
   };
 
   # Login and lock screen
@@ -72,6 +75,7 @@
     AppleShowAllExtensions = true;
     ShowStatusBar = true;
     ShowPathbar = true;
+    FXPreferredViewStyle = "clmv";
   };
 }
 
