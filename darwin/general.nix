@@ -26,7 +26,7 @@
   # fonts.fontDir.enable = true;
   fonts.packages = with pkgs; [
      recursive
-     (nerdfonts.override { fonts = [ "JetBrainsMono" "FiraCode" "Hack" ]; })
+#     (nerd-fonts.override { fonts = [ "JetBrainsMono" "FiraCode" "Hack" ]; })
    ];
 
   # Add ability to used TouchID for sudo authentication
