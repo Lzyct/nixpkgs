@@ -85,7 +85,7 @@
     gitignore = "curl -sL https://www.gitignore.io/api/$argv";
     fbuild = {
       body = ''
-   set -l flavor $argv[1]
+       set -l flavor $argv[1]
        set -l verbose false
 
        # Parse arguments
@@ -146,7 +146,7 @@
        silent_with_spinner "flutter clean" "Cleaning Flutter project..."
        silent_with_spinner "flutter pub get" "Running Flutter pub get..."
 
-       set -l ipa_path "build/ios/ipa/Runner-$flavor.ipa"
+       set -l ipa_path "build/ios/archive/"
        silent_with_spinner "flutter build ipa --flavor $flavor --dart-define-from-file .env.$flavor.json" "Building iOS IPA..."
        echo "iOS IPA Path: $ipa_path"
 
