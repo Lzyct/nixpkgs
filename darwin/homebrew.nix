@@ -46,6 +46,7 @@ homebrew = {
     "facebook/fb"
     "oven-sh/bun"
     "mobile-dev-inc/tap"
+    "mac-cleanup/mac-cleanup-py"
     # "PlayCover/playcover"
   ];
 
@@ -173,6 +174,7 @@ homebrew = {
     "bun"
     "yarn"
     "mtr"
+    "mac-cleanup-py"
     "libpq" # execute this: brew link --force libpq
     "lcov"
   ];
