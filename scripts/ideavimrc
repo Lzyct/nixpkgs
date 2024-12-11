@@ -271,6 +271,7 @@ else
 " nmap <leader>k <c-w>k
 " nmap <leader>j <c-w>j
 " Closing tabs
+
 nmap <leader>q :action CloseContent<cr>
 nmap <leader>Q :action ReopenClosedTab<cr>
 " To navigate between split panes
@@ -345,8 +346,8 @@ nnoremap ]m :action MethodDown<cr>
 nnoremap [c :action VcsShowPrevChangeMarker<cr>
 nnoremap ]c :action VcsShowNextChangeMarker<cr>
 " Tabs
-nnoremap [b :action PreviousTab<cr>
-nnoremap ]b :action NextTab<cr>
+nnoremap [a :action PreviousTab<cr>
+nnoremap [s :action NextTab<cr>
 " Search
 nmap <leader>/ :action Find<cr>
 nmap <leader>\ :action FindInPath<cr>
@@ -354,7 +355,7 @@ nmap <leader>\ :action FindInPath<cr>
 nmap [e :action MoveLineUp<cr>
 nmap ]e :action MoveLineDown<cr>
 " Moving statements
-nmap [s :action MoveStatementUp<cr>
+nmap ]a :action MoveStatementUp<cr>
 nmap ]s :action MoveStatementDown<cr>
 " Building, Running and Debugging
 nmap ,c :action CompileDirty<cr>
