@@ -36,7 +36,7 @@
   # Dock and Mission Control
   system.defaults.dock = {
     autohide = true;
-    expose-group-by-app = false;
+    expose-group-apps = false;
     mru-spaces = false;
     tilesize = 38;
     # Disable all hot corners
