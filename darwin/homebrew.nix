@@ -163,6 +163,7 @@ homebrew = {
     "pkg-config"
     "fprobe"
     "gh"
+    "gnupg"
     "ffmpeg"
     "maven"
     "maestro"
