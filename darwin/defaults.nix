@@ -75,7 +75,7 @@
     AppleShowAllExtensions = true;
     ShowStatusBar = true;
     ShowPathbar = true;
-    FXPreferredViewStyle = "clmv";
+    FXPreferredViewStyle = "nlsv";
   };
 }
 
