@@ -76,6 +76,9 @@
     ShowStatusBar = true;
     ShowPathbar = true;
     FXPreferredViewStyle = "nlsv";
+    FXRemoveOldTrashItems= true;
+    NewWindowTarget = "Home";
+    ShowExternalHardDrivesOnDesktop = false;
   };
 }
 
