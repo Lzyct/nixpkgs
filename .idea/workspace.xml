@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3905d40-f6ec-477c-a6bd-fd7736303ce7" name="Changes" comment="feat: update system config">
+    <list default="true" id="f3905d40-f6ec-477c-a6bd-fd7736303ce7" name="Changes" comment="feat: update nix darwin">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/darwin/defaults.nix" beforeDir="false" afterPath="$PROJECT_DIR$/darwin/defaults.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/darwin/general.nix" beforeDir="false" afterPath="$PROJECT_DIR$/darwin/general.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/darwin/homebrew.nix" beforeDir="false" afterPath="$PROJECT_DIR$/darwin/homebrew.nix" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flake.lock" beforeDir="false" afterPath="$PROJECT_DIR$/flake.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/ideavimrc" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/ideavimrc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,7 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="aa-macbook" />
-                    <option name="lastUsedInstant" value="1732638463" />
+                    <option name="lastUsedInstant" value="1734314795" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
@@ -178,7 +178,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="chore: add new app in homebrew.nix" />
     <MESSAGE value="feat: add alt-tab" />
     <MESSAGE value="fix: resolve issue with the latest nix" />
     <MESSAGE value="chore: update default darwin configuration" />
@@ -203,7 +202,8 @@
     <MESSAGE value="fix: disable some apps which is already installed" />
     <MESSAGE value="feat: add ikhlas computer name" />
     <MESSAGE value="feat: update system config" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update system config" />
+    <MESSAGE value="feat: update nix darwin" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update nix darwin" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
