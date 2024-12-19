@@ -83,12 +83,12 @@ homebrew = {
     # "WiFi Explorer" = 494803304;
     # Xcode = 497799835;
     # "Yubico Authenticator" = 1497506650;
-    Amphetamine = 937984704;
+#    Amphetamine = 937984704;
     ColorSlurp = 1287239339;
     Spark = 6445813049;
 #    "SpeakerAmp:Booster & Equalizer" = 1496955576;
-    Guidance = 412759995;
-    Fresco = 1251572132;
+#    Guidance = 412759995;
+#    Fresco = 1251572132;
 #    Boom3D = 1233048948;
 #    BalanceLock = 1019371109;
 
@@ -97,19 +97,19 @@ homebrew = {
   # If an app isn't available in the Mac App Store, or the version in the App Store has
   # limitiations, e.g., Transmit, install the Homebrew Cask.
   homebrew.casks = [
-    "alt-tab"
+#    "alt-tab"
     "airbuddy"
     "arc"
   #  "aldente"
-    "appcleaner"
+#    "appcleaner"
  #   "bartender" # enable it later
     "discord"
     "betterdiscord-installer"
 #    "cheatsheet"
-    "copilot-for-xcode"
-    "dbeaver-community"
+#    "copilot-for-xcode"
+#    "dbeaver-community"
 #    "beekeeper-studio"
-    "keycastr"
+#    "keycastr"
 #    "docker"
 #    "dozer"
     "obsidian"
@@ -123,16 +123,16 @@ homebrew = {
     "jetbrains-toolbox"
     "istat-menus"
     "iterm2"
-    "logi-options+"
+#    "logi-options+"
     "karabiner-elements"
     "keka"
 #    "meld"
-    "mos"
+#    "mos"
     "MonitorControl"
   #  "notchnook"
     #"notion"
 #    "intellidock" # disable until this fixed
-    "orbstack"
+#    "orbstack"
     "postman"
     # "playcover-nightly"
     "rectangle"
@@ -140,10 +140,10 @@ homebrew = {
 #    "telegram"
     "raycast"
     # "upwork" issue install from homebrew
-    "visual-studio-code"
+#    "visual-studio-code"
 #    "whatsapp"
-    "obs"
-    "whisky"
+#    "obs"
+#    "whisky"
   ];
 
   # Configuration related to casks
