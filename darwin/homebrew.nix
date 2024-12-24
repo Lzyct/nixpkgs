@@ -108,6 +108,7 @@ homebrew = {
     "discord"
     "betterdiscord-installer"
 #    "cheatsheet"
+    "crossover"
     "copilot-for-xcode"
     "dbeaver-community"
 #    "beekeeper-studio"
