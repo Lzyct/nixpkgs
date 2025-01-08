@@ -107,7 +107,7 @@ homebrew = {
     "betterdiscord-installer"
 #    "cheatsheet"
 #    "copilot-for-xcode"
-#    "dbeaver-community"
+    "dbeaver-community"
 #    "beekeeper-studio"
 #    "keycastr"
 #    "docker"
