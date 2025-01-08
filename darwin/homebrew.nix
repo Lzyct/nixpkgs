@@ -132,7 +132,7 @@ homebrew = {
   #  "notchnook"
     #"notion"
 #    "intellidock" # disable until this fixed
-#    "orbstack"
+    "orbstack"
     "postman"
     # "playcover-nightly"
     "rectangle"
