@@ -1,0 +1,26 @@
+# Font
+font-family= "MonoLisaAlt Nerd Font"
+font-size=14.5
+font-feature = "liga"
+
+# Shell
+command = /etc/profiles/per-user/lzyct/bin/fish
+shell-integration = fish
+
+# Window
+window-title-font-family= "MonoLisaAlt Nerd Font"
+macos-titlebar-proxy-icon = hidden
+window-decoration = true
+window-padding-x = 12
+window-padding-y = 12
+
+# Background
+background-opacity = "0.9"
+background-blur-radius = "15"
+
+# Theme
+theme= catppuccin-mocha
+
+# Keybind
+keybind = global:cmd+shift+ctrl+opt+w=toggle_quick_terminal
+keybind = cmd+s>r=reload_config
