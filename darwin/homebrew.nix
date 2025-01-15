@@ -122,6 +122,7 @@ homebrew = {
     "font-monaspace"
     # "google-chrome"
     "grammarly-desktop"
+    "ghostty"
     "iina"
     "jetbrains-toolbox"
     "istat-menus"
