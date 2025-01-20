@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3905d40-f6ec-477c-a6bd-fd7736303ce7" name="Changes" comment="feat: update nix darwin">
+    <list default="true" id="f3905d40-f6ec-477c-a6bd-fd7736303ce7" name="Changes" comment="feat: enable mos and logioptions+">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/darwin/defaults.nix" beforeDir="false" afterPath="$PROJECT_DIR$/darwin/defaults.nix" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/darwin/homebrew.nix" beforeDir="false" afterPath="$PROJECT_DIR$/darwin/homebrew.nix" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flake.lock" beforeDir="false" afterPath="$PROJECT_DIR$/flake.lock" afterDir="false" />
     </list>
@@ -104,6 +103,7 @@
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/lzyct/.config/nixpkgs&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -118,6 +118,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/scripts" />
     </key>
@@ -153,8 +156,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
       </set>
     </attachedChunks>
   </component>
@@ -178,13 +181,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add alt-tab" />
-    <MESSAGE value="fix: resolve issue with the latest nix" />
-    <MESSAGE value="chore: update default darwin configuration" />
-    <MESSAGE value="fix: resolve homebrew issue" />
-    <MESSAGE value="feat: add git-airasia" />
-    <MESSAGE value="feat: update starship config" />
-    <MESSAGE value="feat: add Amphetamine on app list" />
     <MESSAGE value="feat: add lcov" />
     <MESSAGE value="feat: add ideavimrc" />
     <MESSAGE value="chore: update ideavimrc" />
@@ -203,10 +199,21 @@
     <MESSAGE value="feat: add ikhlas computer name" />
     <MESSAGE value="feat: update system config" />
     <MESSAGE value="feat: update nix darwin" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update nix darwin" />
+    <MESSAGE value="chore: update nix darwin" />
+    <MESSAGE value="chore: update idea config" />
+    <MESSAGE value="chore: update flake.lock" />
+    <MESSAGE value="clean: remove unnecessary app" />
+    <MESSAGE value="feat: enable dbeaver" />
+    <MESSAGE value="feat: enable orbstack" />
+    <MESSAGE value="feat: enable mos and logioptions+" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: enable mos and logioptions+" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

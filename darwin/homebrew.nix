@@ -98,6 +98,7 @@ homebrew = {
   # limitiations, e.g., Transmit, install the Homebrew Cask.
   homebrew.casks = [
 #    "alt-tab"
+    "ghostty"
     "airbuddy"
     "arc"
   #  "aldente"
