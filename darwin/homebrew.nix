@@ -170,7 +170,6 @@ homebrew = {
     "neovim"
     "scrcpy"
     "pinentry-mac"
-    "nodejs"
     "bun"
     "yarn"
     "mtr"
