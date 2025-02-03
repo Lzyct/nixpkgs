@@ -144,7 +144,7 @@ homebrew = {
     # "upwork" issue install from homebrew
 #    "visual-studio-code"
 #    "whatsapp"
-#    "obs"
+    "obs"
 #    "whisky"
   ];
 

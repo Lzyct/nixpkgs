@@ -6,7 +6,7 @@
   ids.gids.nixbld = 350;
 
   nix.settings.substituters = [
-    "https://cache.komunix.org/"
+#    "https://cache.komunix.org/"
     "https://cache.nixos.org/"
     "https://lzyct.cachix.org/"
   ];
