@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3905d40-f6ec-477c-a6bd-fd7736303ce7" name="Changes" comment="chore: update .idea folder">
+    <list default="true" id="f3905d40-f6ec-477c-a6bd-fd7736303ce7" name="Changes" comment="feat: add starship configuration and update .idea workspace">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/starship.nix" beforeDir="false" afterPath="$PROJECT_DIR$/home/starship.nix" afterDir="false" />
     </list>
@@ -186,7 +186,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add fish config" />
     <MESSAGE value="fix: disable deprecated apps" />
     <MESSAGE value="chore: disable beekeper" />
     <MESSAGE value="docs: update README.md" />
@@ -211,7 +210,8 @@
     <MESSAGE value="chore: disable cache.komunix" />
     <MESSAGE value="chore : hide hidden file" />
     <MESSAGE value="chore: update .idea folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: update .idea folder" />
+    <MESSAGE value="feat: add starship configuration and update .idea workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add starship configuration and update .idea workspace" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

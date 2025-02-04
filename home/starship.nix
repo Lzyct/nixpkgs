@@ -9,8 +9,8 @@
       add_newline = true;
       command_timeout = 5000;
       character = {
-         success_symbol = ''[ 󱞩](bold yellow)'';
-         error_symbol = ''[ 󱞩](bold red)'';
+         success_symbol = ''[ 󱞩 ](bold yellow)'';
+         error_symbol = ''[ 󱞩 ](bold red)'';
        };
 
       package.disabled = false;
@@ -66,14 +66,9 @@
         };
       };
 
-      fill = {
-        style = ''fg:base'';
-        symbol = '' '';
-      };
-
       git_branch = {
         format = ''[](fg:mantle)[ $symbol $branch ]($style)[](fg:mantle) '';
-        style = ''bg:mantle fg:maroon'';
+        style = ''bg:mantle fg:sky'';
         symbol = '''';
       };
 
@@ -114,7 +109,7 @@
 
            cmd_duration = {
              format = ''[](fg:mantle)[⏱ $duration]($style)[](fg:mantle)'';
-             style = ''bg:mantle fg:peach'';
+             style = ''bg:mantle fg:green'';
            };
 
            cobol = {
@@ -321,11 +316,11 @@
              symbol = '' '';
            };
 
-           package = {
-             format = ''[](fg:mantle)[$symbol[$version]($style)[](fg:mantle)'';
-             style = ''bg:mantle fg:yellow'';
-             symbol = ''󰏗 '';
-           };
+            package = {
+              format = ''[](fg:base)[$symbols][$version]($style)[](fg:base)'';
+              style = ''bg:base fg:yellow'';
+              symbol = ''󰏗 '';
+            };
 
            perl = {
              format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
