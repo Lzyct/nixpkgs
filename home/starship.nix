@@ -51,19 +51,26 @@
         };
       };
 
+      # directory symbol nerd font
+
+
       directory = {
         format = ''[](fg:mantle)[   $path ]($style)[](fg:mantle) '';
+#        truncation_length = 255;
+#         truncation_symbol = ''󰍻'';
+#        truncate_to_repo = false;
+#        use_logical_path = false;
         style = ''bg:mantle fg:blue bold'';
-        substitutions = {
-         Workspace = ''󱃪 '';
-         Documents = ''󰈙 '';
-         Downloads = '' '';
-         Music = '' '';
-         Pictures = ''  '';
-         Desktop = ''  '';
-         Videos = ''  '';
-         Home = ''  '';
-        };
+#        substitutions = {
+#         Workspace = ''󱃪 '';
+#         Documents = ''󰈙 '';
+#         Downloads = '' '';
+#         Music = '' '';
+#         Pictures = ''  '';
+#         Desktop = ''  '';
+#         Videos = ''  '';
+#         Home = ''  '';
+#        };
       };
 
       git_branch = {
