@@ -9,12 +9,12 @@
       add_newline = true;
       command_timeout = 5000;
       character = {
-         success_symbol = ''[ »](bold yellow)'';
-         error_symbol = ''[ »](bold red)'';
+         success_symbol = ''[ 󱞩](bold yellow)'';
+         error_symbol = ''[ 󱞩](bold red)'';
        };
 
       package.disabled = false;
-      palette = "catppuccin_mocha";
+      palette = ''catppuccin_mocha'';
 
       gcloud = {
             format = '''';
@@ -22,37 +22,38 @@
 
       palettes = {
         catppuccin_mocha = {
-          rosewater = "#f5e0dc";
-          flamingo = "#f2cdcd";
-          pink = "#f5c2e7";
-          mauve = "#cba6f7";
-          red = "#f38ba8";
-          maroon = "#eba0ac";
-          peach = "#fab387";
-          yellow = "#f9e2af";
-          green = "#a6e3a1";
-          teal = "#94e2d5";
-          sky = "#89dceb";
-          sapphire = "#74c7ec";
-          blue = "#89b4fa";
-          lavender = "#b4befe";
-          text = "#cdd6f4";
-          subtext1 = "#bac2de";
-          subtext0 = "#a6adc8";
-          overlay2 = "#9399b2";
-          overlay1 = "#7f849c";
-          overlay0 = "#6c7086";
-          surface2 = "#585b70";
-          surface1 = "#45475a";
-          surface0 = "#313244";
-          base = "#1e1e2e";
-          mantle = "#181825";
-          crust = "#11111b";
+          rosewater = ''#f5e0dc'';
+          flamingo = ''#f2cdcd'';
+          pink = ''#f5c2e7'';
+          mauve = ''#cba6f7'';
+          red = ''#f38ba8'';
+          maroon = ''#eba0ac'';
+          peach = ''#fab387'';
+          yellow = ''#f9e2af'';
+          green = ''#a6e3a1'';
+          teal = ''#94e2d5'';
+          sky = ''#89dceb'';
+          sapphire = ''#74c7ec'';
+          blue = ''#89b4fa'';
+          lavender = ''#b4befe'';
+          text = ''#cdd6f4'';
+          subtext1 = ''#bac2de'';
+          subtext0 = ''#a6adc8'';
+          overlay2 = ''#9399b2'';
+          overlay1 = ''#7f849c'';
+          overlay0 = ''#6c7086'';
+          surface2 = ''#585b70'';
+          surface1 = ''#45475a'';
+          surface0 = ''#313244'';
+          base = ''#1e1e2e'';
+          mantle = ''#181825'';
+          crust = ''#11111b'';
         };
       };
 
       directory = {
-        format = ''[ $path ]($style)'';
+        format = ''[](fg:mantle)[   $path ]($style)[](fg:mantle) '';
+        style = ''bg:mantle fg:blue bold'';
         substitutions = {
          Workspace = ''󱃪 '';
          Documents = ''󰈙 '';
@@ -65,192 +66,350 @@
         };
       };
 
-      aws = {
-         format = ''\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'';
-       };
-      c = {
-        format = ''\[[$symbol($version(-$name))]($style)\]'';
+      fill = {
+        style = ''fg:base'';
+        symbol = '' '';
       };
-      cmake = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      cmd_duration = {
-        format = ''\[[⏱ $duration]($style)\]'';
-      };
-      cobol = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      conda = {
-        format = ''\[[$symbol$environment]($style)\]'';
-      };
-      crystal = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      daml = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      dart = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      deno = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      docker_context = {
-        format = ''\[[$symbol$context]($style)\]'';
-      };
-      dotnet = {
-        format = ''\[[$symbol($version)(🎯 $tfm)]($style)\]'';
-      };
-      elixir = {
-        format = ''\[[$symbol($version \(OTP $otp_version\))]($style)\]'';
-      };
-      elm = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      erlang = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      fennel = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      fossil_branch = {
-        format = ''\[[$symbol$branch]($style)\]'';
-      };
+
       git_branch = {
-        format = ''\[[$symbol$branch]($style)\]'';
+        format = ''[](fg:mantle)[ $symbol $branch ]($style)[](fg:mantle) '';
+        style = ''bg:mantle fg:maroon'';
+        symbol = '''';
       };
+
       git_status = {
-        format = ''([\[$all_status$ahead_behind\]]($style))'';
+        disabled = false;
+        style = ''bg:mantle fg:red'';
+        format = ''[](fg:mantle)([$all_status$ahead_behind]($style))[](fg:mantle) '';
+        up_to_date = ''[ ✓ ](bg:mantle fg:teal)'';
+        untracked = ''[?($count)](bg:mantle fg:peach)'';
+        stashed = ''[\$](bg:mantle fg:mauve)'';
+        modified = ''[!($count)](bg:mantle fg:flamingo)'';
+        renamed = ''[»($count)](bg:mantle fg:mauve)'';
+        deleted = ''[✘($count)](style)'';
+        staged = ''[++($count)](bg:mantle fg:peach)'';
+        ahead = ''[⇡($count)](bg:mantle fg:teal)'';
+        diverged = ''⇕[[](bg:mantle fg:mauve)[⇡($ahead_count)](bg:mantle fg:teal)[⇣($behind_count)](bg:mantle fg:pink)[]](bg:mantle fg:mauve)'';
+        behind = ''[⇣($count)](bg:mantle fg:pink)'';
       };
-      golang = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      gradle = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      guix_shell = {
-        format = ''\[[$symbol]($style)\]'';
-      };
-      haskell = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      haxe = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      helm = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      hg_branch = {
-        format = ''\[[$symbol$branch]($style)\]'';
-      };
-      java = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      julia = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      kotlin = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      kubernetes = {
-        format = ''\[[$symbol$context( \($namespace\))]($style)\]'';
-      };
-      lua = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      memory_usage = {
-        format = ''\[$symbol[$ram( | $swap)]($style)\]'';
-      };
-      meson = {
-        format = ''\[[$symbol$project]($style)\]'';
-      };
-      nim = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      nix_shell = {
-        format = ''\[[$symbol$state( \($name\))]($style)\]'';
-      };
-      nodejs = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      ocaml = {
-        format = ''\[[$symbol($version)(\($switch_indicator$switch_name\))]($style)\]'';
-      };
-      opa = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      openstack = {
-        format = ''\[[$symbol$cloud(\($project\))]($style)\]'';
-      };
-      os = {
-        format = ''\[[$symbol]($style)\]'';
-      };
-      package = {
-        format = ''\[$symbol[$version]($style)\]'';
-      };
-      perl = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      php = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      pijul_channel = {
-        format = ''\[[$symbol$channel]($style)\]'';
-      };
-      pulumi = {
-        format = ''\[[$symbol$stack]($style)\]'';
-      };
-      purescript = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      python = {
-        format = ''\[[$symbol$pyenv_prefix($version)(\($virtualenv\))]($style)\]'';
-      };
-      raku = {
-        format = ''\[[$symbol($version-$vm_version)]($style)\]'';
-      };
-      red = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      ruby = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      rust = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      scala = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      spack = {
-        format = ''\[[$symbol$environment]($style)\]'';
-      };
-      sudo = {
-        format = ''\[[as $symbol]($style)\]'';
-      };
-      swift = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      terraform = {
-        format = ''\[[$symbol$workspace]($style)\]'';
-      };
-      time = {
-        format = ''\[[$time]($style)\]'';
-      };
-      username = {
-        format = ''\[[$user]($style)\]'';
-      };
-      vagrant = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      vlang = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      zig = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
-      solidity = {
-        format = ''\[[$symbol($version)]($style)\]'';
-      };
+
+      # Language and tool configurations
+           aws = {
+             format = ''[](fg:mantle)[$symbol($profile)(\($region\))(\[$duration\])]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:yellow'';
+             symbol = '' '';
+           };
+
+           c = {
+             format = ''[](fg:mantle)[$symbol($version(-$name))]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:blue'';
+             symbol = '' '';
+           };
+
+           cmake = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:green'';
+             symbol = ''󰘳 '';
+           };
+
+           cmd_duration = {
+             format = ''[](fg:mantle)[⏱ $duration]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:peach'';
+           };
+
+           cobol = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:blue'';
+             symbol = ''⚙️ '';
+           };
+
+           conda = {
+             format = ''[](fg:mantle)[$symbol$environment]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:green'';
+             symbol = ''🅒 '';
+           };
+
+           crystal = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:red'';
+             symbol = '' '';
+           };
+
+           daml = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:blue'';
+             symbol = ''󰏖 '';
+           };
+
+           dart = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:blue'';
+             symbol = '' '';
+           };
+
+           deno = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:green'';
+             symbol = '' '';
+           };
+
+           docker_context = {
+             format = ''[](fg:mantle)[$symbol$context]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:blue'';
+             symbol = ''󰡨 '';
+           };
+
+           dotnet = {
+             format = ''[](fg:mantle)[$symbol($version)(🎯 $tfm)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:purple'';
+             symbol = ''󰪮 '';
+           };
+
+           elixir = {
+             format = ''[](fg:mantle)[$symbol($version \(OTP $otp_version\))]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:purple'';
+             symbol = '' '';
+           };
+
+           elm = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:teal'';
+             symbol = '' '';
+           };
+
+           erlang = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:red'';
+             symbol = '' '';
+           };
+
+           fennel = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:green'';
+             symbol = '' '';
+           };
+
+           fossil_branch = {
+             format = ''[](fg:mantle)[$symbol$branch]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:blue'';
+             symbol = ''󰣖 '';
+           };
+
+           golang = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:teal'';
+             symbol = '' '';
+           };
+
+           gradle = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:green'';
+             symbol = '' '';
+           };
+
+           guix_shell = {
+             format = ''[](fg:mantle)[$symbol]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:blue'';
+             symbol = '' '';
+           };
+
+           haskell = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:purple'';
+             symbol = '' '';
+           };
+
+           haxe = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:orange'';
+             symbol = '' '';
+           };
+
+           helm = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:blue'';
+             symbol = ''󰙏 '';
+           };
+
+           hg_branch = {
+             format = ''[](fg:mantle)[$symbol$branch]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:purple'';
+             symbol = '' '';
+           };
+
+           java = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:red'';
+             symbol = '' '';
+           };
+
+           julia = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:purple'';
+             symbol = '' '';
+           };
+
+           kotlin = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:blue'';
+             symbol = '' '';
+           };
+
+           kubernetes = {
+             format = ''[](fg:mantle)[$symbol$context( \($namespace\))]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:blue'';
+             symbol = ''󰠳 '';
+           };
+
+           lua = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:blue'';
+             symbol = '' '';
+           };
+
+           memory_usage = {
+             format = ''[](fg:mantle)[$symbol[$ram( | $swap)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:yellow'';
+             symbol = ''󰍛 '';
+           };
+
+           meson = {
+             format = ''[](fg:mantle)[$symbol$project]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:green'';
+             symbol = ''󰔷 '';
+           };
+
+           nim = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:yellow'';
+             symbol = ''󰆥 '';
+           };
+
+           nix_shell = {
+             format = ''[](fg:mantle)[$symbol$state( \($name\))]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:blue'';
+             symbol = '' '';
+           };
+
+           nodejs = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:green'';
+             symbol = ''󰎙 '';
+           };
+
+           ocaml = {
+             format = ''[](fg:mantle)[$symbol($version)(\($switch_indicator$switch_name\))]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:yellow'';
+             symbol = '' '';
+           };
+
+           opa = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:blue'';
+             symbol = ''󰚩 '';
+           };
+
+           openstack = {
+             format = ''[](fg:mantle)[$symbol$cloud(\($project\))]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:blue'';
+             symbol = ''󰙭 '';
+           };
+
+           os = {
+             format = ''[](fg:mantle)[$symbol]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:blue'';
+             symbol = '' '';
+           };
+
+           package = {
+             format = ''[](fg:mantle)[$symbol[$version]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:yellow'';
+             symbol = ''󰏗 '';
+           };
+
+           perl = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:blue'';
+             symbol = '' '';
+           };
+
+           php = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:blue'';
+             symbol = '' '';
+           };
+
+           pijul_channel = {
+             format = ''[](fg:mantle)[$symbol$channel]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:blue'';
+             symbol = ''󰚩 '';
+           };
+
+           pulumi = {
+             format = ''[](fg:mantle)[$symbol$stack]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:purple'';
+             symbol = ''󰆧 '';
+           };
+
+           purescript = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:white'';
+             symbol = '' '';
+           };
+
+           python = {
+             format = ''[](fg:mantle)[$symbol$pyenv_prefix($version)(\($virtualenv\))]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:yellow'';
+             symbol = '' '';
+           };
+
+           raku = {
+             format = ''[](fg:mantle)[$symbol($version-$vm_version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:blue'';
+             symbol = '' '';
+           };
+
+           red = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:red'';
+             symbol = '' '';
+           };
+
+           ruby = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:red'';
+             symbol = '' '';
+           };
+
+           rust = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:orange'';
+             symbol = '' '';
+           };
+
+           scala = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:red'';
+             symbol = '' '';
+           };
+
+           spack = {
+             format = ''[](fg:mantle)[$symbol$environment]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:blue'';
+             symbol = ''󰙲 '';
+           };
+
+           sudo = {
+             format = ''[](fg:mantle)[as $symbol]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:yellow'';
+             symbol = ''󰚀 '';
+           };
+
+           swift = {
+             format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+             style = ''bg:mantle fg:orange'';
+             symbol = '' '';
+           };
 
 
     } ;

@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3905d40-f6ec-477c-a6bd-fd7736303ce7" name="Changes" comment="chore: disable komunix">
+    <list default="true" id="f3905d40-f6ec-477c-a6bd-fd7736303ce7" name="Changes" comment="chore: update .idea folder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/darwin/bootstrap.nix" beforeDir="false" afterPath="$PROJECT_DIR$/darwin/bootstrap.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/darwin/defaults.nix" beforeDir="false" afterPath="$PROJECT_DIR$/darwin/defaults.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flake.lock" beforeDir="false" afterPath="$PROJECT_DIR$/flake.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/starship.nix" beforeDir="false" afterPath="$PROJECT_DIR$/home/starship.nix" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -189,9 +186,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: update homebrew app list" />
-    <MESSAGE value="chore: update computer name" />
-    <MESSAGE value="fix: on macOS sequoia" />
     <MESSAGE value="feat: add fish config" />
     <MESSAGE value="fix: disable deprecated apps" />
     <MESSAGE value="chore: disable beekeper" />
@@ -214,7 +208,10 @@
     <MESSAGE value="chore: activate apps" />
     <MESSAGE value="feat: update defaults for macOS settings and remove nodejs from homebrew" />
     <MESSAGE value="chore: disable komunix" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: disable komunix" />
+    <MESSAGE value="chore: disable cache.komunix" />
+    <MESSAGE value="chore : hide hidden file" />
+    <MESSAGE value="chore: update .idea folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: update .idea folder" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
