@@ -156,13 +156,13 @@
 
            dotnet = {
              format = ''[](fg:mantle)[$symbol($version)(🎯 $tfm)]($style)[](fg:mantle)'';
-             style = ''bg:mantle fg:purple'';
+             style = ''bg:mantle fg:mauve'';
              symbol = ''󰪮 '';
            };
 
            elixir = {
              format = ''[](fg:mantle)[$symbol($version \(OTP $otp_version\))]($style)[](fg:mantle)'';
-             style = ''bg:mantle fg:purple'';
+             style = ''bg:mantle fg:mauve'';
              symbol = '' '';
            };
 
@@ -210,13 +210,13 @@
 
            haskell = {
              format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
-             style = ''bg:mantle fg:purple'';
+             style = ''bg:mantle fg:mauve'';
              symbol = '' '';
            };
 
            haxe = {
              format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
-             style = ''bg:mantle fg:orange'';
+             style = ''bg:mantle fg:flamingo'';
              symbol = '' '';
            };
 
@@ -228,7 +228,7 @@
 
            hg_branch = {
              format = ''[](fg:mantle)[$symbol$branch]($style)[](fg:mantle)'';
-             style = ''bg:mantle fg:purple'';
+             style = ''bg:mantle fg:mauve'';
              symbol = '' '';
            };
 
@@ -240,7 +240,7 @@
 
            julia = {
              format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
-             style = ''bg:mantle fg:purple'';
+             style = ''bg:mantle fg:mauve'';
              symbol = '' '';
            };
 
@@ -316,11 +316,11 @@
              symbol = '' '';
            };
 
-            package = {
-              format = ''[](fg:base)[$symbols][$version]($style)[](fg:base)'';
-              style = ''bg:base fg:yellow'';
+           package = {
+              format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
+              style = ''bg:mantle fg:yellow'';
               symbol = ''󰏗 '';
-            };
+           };
 
            perl = {
              format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
@@ -342,13 +342,13 @@
 
            pulumi = {
              format = ''[](fg:mantle)[$symbol$stack]($style)[](fg:mantle)'';
-             style = ''bg:mantle fg:purple'';
+             style = ''bg:mantle fg:mauve'';
              symbol = ''󰆧 '';
            };
 
            purescript = {
              format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
-             style = ''bg:mantle fg:white'';
+             style = ''bg:mantle fg:maroon'';
              symbol = '' '';
            };
 
@@ -378,7 +378,7 @@
 
            rust = {
              format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
-             style = ''bg:mantle fg:orange'';
+             style = ''bg:mantle fg:flamingo'';
              symbol = '' '';
            };
 
@@ -402,7 +402,7 @@
 
            swift = {
              format = ''[](fg:mantle)[$symbol($version)]($style)[](fg:mantle)'';
-             style = ''bg:mantle fg:orange'';
+             style = ''bg:mantle fg:flamingo'';
              symbol = '' '';
            };
 
