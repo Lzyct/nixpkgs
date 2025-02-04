@@ -311,9 +311,14 @@
            };
 
            os = {
-             format = ''[](fg:mantle)[$symbol]($style)[](fg:mantle)'';
+             format = ''[](fg:mantle)\[[$symbol]($style)\][](fg:mantle)'';
              style = ''bg:mantle fg:blue'';
-             symbol = '' '';
+             symbols = {
+                    Arch = ''󰏜 '';
+                    Ubuntu = ''󰏚 '';
+                    Macos = '' '';
+                    Windows = '' '';
+                };
            };
 
            package = {
