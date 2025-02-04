@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3905d40-f6ec-477c-a6bd-fd7736303ce7" name="Changes" comment="feat: update defaults for macOS settings and remove nodejs from homebrew">
+    <list default="true" id="f3905d40-f6ec-477c-a6bd-fd7736303ce7" name="Changes" comment="chore: disable komunix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/darwin/bootstrap.nix" beforeDir="false" afterPath="$PROJECT_DIR$/darwin/bootstrap.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/darwin/homebrew.nix" beforeDir="false" afterPath="$PROJECT_DIR$/darwin/homebrew.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/darwin/defaults.nix" beforeDir="false" afterPath="$PROJECT_DIR$/darwin/defaults.nix" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flake.lock" beforeDir="false" afterPath="$PROJECT_DIR$/flake.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/starship.nix" beforeDir="false" afterPath="$PROJECT_DIR$/home/starship.nix" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +84,9 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2Te6dCz03UJA95fKwQK6Bav8nCg" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -185,7 +189,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: update homebrew config" />
     <MESSAGE value="feat: update homebrew app list" />
     <MESSAGE value="chore: update computer name" />
     <MESSAGE value="fix: on macOS sequoia" />
@@ -210,7 +213,8 @@
     <MESSAGE value="feat: enable with latest nix" />
     <MESSAGE value="chore: activate apps" />
     <MESSAGE value="feat: update defaults for macOS settings and remove nodejs from homebrew" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update defaults for macOS settings and remove nodejs from homebrew" />
+    <MESSAGE value="chore: disable komunix" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: disable komunix" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
