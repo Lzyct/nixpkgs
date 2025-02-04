@@ -73,7 +73,6 @@
 
   # Finder
   system.defaults.finder = {
-    AppleShowAllFiles = true;
     ShowStatusBar = true;
     ShowPathbar = true;
     FXDefaultSearchScope = "SCcf";
