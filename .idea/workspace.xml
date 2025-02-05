@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3905d40-f6ec-477c-a6bd-fd7736303ce7" name="Changes" comment="chore: update starship styles in configuration files">
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/nixpkgs.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="f3905d40-f6ec-477c-a6bd-fd7736303ce7" name="Changes" comment="chore: update workspace.xml and starship.nix for improved configuration and styling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/starship.nix" beforeDir="false" afterPath="$PROJECT_DIR$/home/starship.nix" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +188,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="docs: update README.md" />
     <MESSAGE value="fix: disable ids.gids.nixbld" />
     <MESSAGE value="fix: disable deprecated taps" />
     <MESSAGE value="chore: update flake version" />
@@ -219,7 +212,8 @@
     <MESSAGE value="feat: add starship configuration and update .idea workspace" />
     <MESSAGE value="chore: update workspace.xml and .gitignore to streamline project configuration" />
     <MESSAGE value="chore: update starship styles in configuration files" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: update starship styles in configuration files" />
+    <MESSAGE value="chore: update workspace.xml and starship.nix for improved configuration and styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: update workspace.xml and starship.nix for improved configuration and styling" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
