@@ -30,7 +30,7 @@
    ];
 
   # Add ability to used TouchID for sudo authentication
-  security.pam.enableSudoTouchIdAuth = false;
+  # security.pam.enableSudoTouchIdAuth = false;
 
   # Disable iCloud sync
   system.defaults.NSGlobalDomain.NSDocumentSaveNewDocumentsToCloud = false;

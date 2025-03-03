@@ -166,6 +166,7 @@ homebrew = {
     "gh"
     "gnupg"
     "ffmpeg"
+    "fastfetch"
     "maven"
     "idb-companion"
     "neovim"

@@ -12,8 +12,8 @@
       add_newline = true;
       command_timeout = 5000;
       character = {
-         success_symbol = ''[ 󱞩 ](bold yellow)'';
-         error_symbol = ''[ 󱞩 ](bold red)'';
+         success_symbol = ''[ 󰘍](bold yellow)'';
+         error_symbol = ''[ 󰘍](bold red)'';
        };
 
       package.disabled = false;
@@ -118,7 +118,7 @@
            };
 
            cmd_duration = {
-             format = ''[](fg:mantle)[⏱ $duration]($style)[](fg:mantle)'';
+             format = ''[](fg:mantle)[󰄉 $duration]($style)[](fg:mantle)'';
              style = ''bg:mantle fg:green'';
            };
 
@@ -421,7 +421,12 @@
              symbol = '' '';
            };
 
-
+           time = {
+             format = "[](fg:mantle)[ $time 󰴈 ]($style)[](fg:mantle)";
+             style = "bg:mantle fg:rose";
+             time_format = "%I:%M%P";
+             use_12hr = true;
+           };
     } ;
   };
 }
