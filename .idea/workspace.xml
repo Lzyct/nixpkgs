@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3905d40-f6ec-477c-a6bd-fd7736303ce7" name="Changes" comment="chore: disable fish and bash integration options to starship configuration">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="f3905d40-f6ec-477c-a6bd-fd7736303ce7" name="Changes" comment="chore: update workspace.xml, general.nix, homebrew.nix, and starship.nix for improved configuration and styling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/darwin/general.nix" beforeDir="false" afterPath="$PROJECT_DIR$/darwin/general.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/darwin/homebrew.nix" beforeDir="false" afterPath="$PROJECT_DIR$/darwin/homebrew.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/starship.nix" beforeDir="false" afterPath="$PROJECT_DIR$/home/starship.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/darwin/bootstrap.nix" beforeDir="false" afterPath="$PROJECT_DIR$/darwin/bootstrap.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flake.lock" beforeDir="false" afterPath="$PROJECT_DIR$/flake.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +191,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add ikhlas computer name" />
     <MESSAGE value="feat: update system config" />
     <MESSAGE value="feat: update nix darwin" />
     <MESSAGE value="chore: update nix darwin" />
@@ -218,7 +215,8 @@
     <MESSAGE value="chore: add localsend to homebrew.nix package list" />
     <MESSAGE value="chore: add fish and bash integration options to starship configuration" />
     <MESSAGE value="chore: disable fish and bash integration options to starship configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: disable fish and bash integration options to starship configuration" />
+    <MESSAGE value="chore: update workspace.xml, general.nix, homebrew.nix, and starship.nix for improved configuration and styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: update workspace.xml, general.nix, homebrew.nix, and starship.nix for improved configuration and styling" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

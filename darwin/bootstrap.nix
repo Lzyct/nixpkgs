@@ -16,7 +16,7 @@
   nix.settings.trusted-users = [
     "@admin"
   ];
-  nix.configureBuildUsers = true;
+  #nix.configureBuildUsers = true;
 
   # Enable experimental nix command and flakes
   # nix.package = pkgs.nixUnstable;
@@ -28,7 +28,7 @@
   '';
 
   # Auto upgrade nix package and the daemon service.
-  services.nix-daemon.enable = true;
+#  services.nix-daemon.enable = true;
 
 
   # Shells -----------------------------------------------------------------------------------------
