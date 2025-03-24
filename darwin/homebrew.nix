@@ -44,6 +44,7 @@ homebrew = {
     "homebrew/services"
     "nrlquaker/createzap"
     "facebook/fb"
+    "mobile-dev-inc/tap"
     "oven-sh/bun"
     # "PlayCover/playcover"
   ];
