@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3905d40-f6ec-477c-a6bd-fd7736303ce7" name="Changes" comment="chore: update workspace.xml, general.nix, homebrew.nix, and starship.nix for improved configuration and styling">
+    <list default="true" id="f3905d40-f6ec-477c-a6bd-fd7736303ce7" name="Changes" comment="fix: support latest flake update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/darwin/bootstrap.nix" beforeDir="false" afterPath="$PROJECT_DIR$/darwin/bootstrap.nix" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flake.lock" beforeDir="false" afterPath="$PROJECT_DIR$/flake.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -191,7 +190,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: update system config" />
     <MESSAGE value="feat: update nix darwin" />
     <MESSAGE value="chore: update nix darwin" />
     <MESSAGE value="chore: update idea config" />
@@ -216,7 +214,8 @@
     <MESSAGE value="chore: add fish and bash integration options to starship configuration" />
     <MESSAGE value="chore: disable fish and bash integration options to starship configuration" />
     <MESSAGE value="chore: update workspace.xml, general.nix, homebrew.nix, and starship.nix for improved configuration and styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: update workspace.xml, general.nix, homebrew.nix, and starship.nix for improved configuration and styling" />
+    <MESSAGE value="fix: support latest flake update" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: support latest flake update" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
