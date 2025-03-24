@@ -41,7 +41,7 @@ homebrew = {
 #    "homebrew/cask-fonts"
 #    "homebrew/cask-versions"
 #    "homebrew/core"
-    "homebrew/services"
+#    "homebrew/services"
     "nrlquaker/createzap"
     "facebook/fb"
     "mobile-dev-inc/tap"
