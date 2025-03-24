@@ -85,84 +85,12 @@
     gitignore = "curl -sL https://www.gitignore.io/api/$argv";
     fbuild = {
       body = ''
-       set -l flavor $argv[1]
-       set -l verbose false
-
-       # Parse arguments
-       for arg in $argv
-           switch $arg
-               case '--verbose'
-                   set verbose true
-           end
-       end
-
-       # Logging function
-       function log
-           if test "$verbose" = "true"
-               echo $argv
-           end
-       end
-
-       # Function to run commands with optional verbose/spinner output
-       function silent_with_spinner
-           set -l cmd $argv[1]
-           set -l message $argv[2]
-
-           if test "$verbose" = "true"
-               eval $cmd
-           else
-               echo -n $message
-               set -l start_time (date +%s)
-               eval $cmd > /dev/null 2>&1 &
-               set -l pid (jobs -l | awk '{print $2}')
-               set -l spinner '⠋' '⠙' '⠹' '⠸' '⠼' '⠴' '⠦' '⠧' '⠇' '⠏'
-               set -l i 1
-
-               while kill -0 $pid 2>/dev/null
-                   echo -ne "\r$message $spinner[$i]"
-                   set i (math $i % (count $spinner) + 1)
-                   sleep 0.1
-               end
-
-               wait $pid
-               set -l end_time (date +%s)
-               set -l duration (math $end_time - $start_time)
-               echo -e "\r$message ✓ ($duration seconds)"
-           end
-       end
-
-       # Validate flavor argument
-       if test -z "$flavor"
-           echo "Error: Flavor must be specified"
-           return 1
-       end
-
-       log "Building for flavor: $flavor"
-
-       # Track total build start time
-       set -l total_start_time (date +%s)
-
-       # Perform builds with output path logging
-       silent_with_spinner "flutter clean" "Cleaning Flutter project..."
-       silent_with_spinner "flutter pub get" "Running Flutter pub get..."
-
-       set -l ipa_path "build/ios/archive/"
-       silent_with_spinner "flutter build ipa --flavor $flavor --dart-define-from-file .env.$flavor.json" "Building iOS IPA..."
-       echo "iOS IPA Path: $ipa_path"
-
-       set -l aab_path "build/app/outputs/bundle/$flavor/app-$flavor-release.aab"
-       silent_with_spinner "flutter build appbundle --flavor $flavor --dart-define-from-file .env.$flavor.json" "Building Android App Bundle..."
-       echo "Android App Bundle Path: $aab_path"
-
-       set -l apk_path "build/app/outputs/flutter-apk/app-$flavor-release.apk"
-       silent_with_spinner "flutter build apk --flavor $flavor --dart-define-from-file .env.$flavor.json" "Building Android APK..."
-       echo "Android APK Path: $apk_path"
-
-       # Calculate and display total build duration
-       set -l total_end_time (date +%s)
-       set -l total_duration (math $total_end_time - $total_start_time)
-
-       echo "✨ Build completed successfully for $flavor in $total_duration seconds!"
+        set flavor $argv[1]
+        flutter clean;
+        flutter pub get;
+        flutter build ipa --flavor $flavor --dart-define-from-file .env.$flavor.json;
+        flutter build appbundle --flavor $flavor --dart-define-from-file .env.$flavor.json;
+        flutter build apk --flavor $flavor --dart-define-from-file .env.$flavor.json;
         ''
         ;
     };
@@ -261,13 +189,6 @@
     		command free $argv
     	end
        '';
-    };
-    ga-aa = {
-    body = ''
-        git config --local user.name Mudassir
-        git config --local user.email mudassir@airasia.com
-        ''
-        ;
     };
   };
 

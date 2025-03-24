@@ -45,8 +45,6 @@ homebrew = {
     "nrlquaker/createzap"
     "facebook/fb"
     "oven-sh/bun"
-    "mobile-dev-inc/tap"
-    "mac-cleanup/mac-cleanup-py"
     # "PlayCover/playcover"
   ];
 
@@ -89,8 +87,8 @@ homebrew = {
     ColorSlurp = 1287239339;
     Spark = 6445813049;
 #    "SpeakerAmp:Booster & Equalizer" = 1496955576;
-    Guidance = 412759995;
-    Fresco = 1251572132;
+#    Guidance = 412759995;
+#    Fresco = 1251572132;
 #    Boom3D = 1233048948;
 #    BalanceLock = 1019371109;
 
@@ -99,20 +97,20 @@ homebrew = {
   # If an app isn't available in the Mac App Store, or the version in the App Store has
   # limitiations, e.g., Transmit, install the Homebrew Cask.
   homebrew.casks = [
-    "alt-tab"
+#    "alt-tab"
+    "ghostty"
     "airbuddy"
     "arc"
     "aldente"
-    "pearcleaner"
+#    "appcleaner"
     "bartender" # enable it later
     "discord"
     "betterdiscord-installer"
 #    "cheatsheet"
-    "crossover"
     "copilot-for-xcode"
     "dbeaver-community"
 #    "beekeeper-studio"
-    "keycastr"
+#    "keycastr"
 #    "docker"
 #    "dozer"
     "obsidian"
@@ -122,12 +120,12 @@ homebrew = {
     "font-monaspace"
     # "google-chrome"
     "grammarly-desktop"
-    "ghostty"
     "iina"
     "jetbrains-toolbox"
     "istat-menus"
     "iterm2"
     "logi-options+"
+    "localsend"
     "karabiner-elements"
     "keka"
 #    "meld"
@@ -138,6 +136,7 @@ homebrew = {
 #    "intellidock" # disable until this fixed
     "orbstack"
     "postman"
+    "pearcleaner"
     # "playcover-nightly"
     "rectangle"
     # "insomnia"
@@ -147,7 +146,7 @@ homebrew = {
 #    "visual-studio-code"
 #    "whatsapp"
     "obs"
-    "whisky"
+#    "whisky"
   ];
 
   # Configuration related to casks
@@ -167,13 +166,13 @@ homebrew = {
     "gh"
     "gnupg"
     "ffmpeg"
+    "fastfetch"
     "maven"
     "maestro"
     "idb-companion"
     "neovim"
     "scrcpy"
     "pinentry-mac"
-    "nodejs"
     "bun"
     "yarn"
     "mtr"

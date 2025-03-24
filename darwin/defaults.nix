@@ -1,6 +1,5 @@
 {
   system.defaults.NSGlobalDomain = {
-    "com.apple.trackpad.scaling" = 3.0;
     # Disable system theme
     AppleInterfaceStyleSwitchesAutomatically = false;
     AppleMeasurementUnits = "Centimeters";
@@ -18,6 +17,9 @@
   };
 
   system.defaults.SoftwareUpdate.AutomaticallyInstallMacOSUpdates = true;
+
+  ## copy to clipboard when screen capture
+  system.defaults.screencapture.target = "clipboard";
 
   system.defaults.menuExtraClock = {
     IsAnalog = true;
@@ -71,14 +73,23 @@
 
   # Finder
   system.defaults.finder = {
-    FXEnableExtensionChangeWarning = true;
-    AppleShowAllExtensions = true;
     ShowStatusBar = true;
     ShowPathbar = true;
-    FXPreferredViewStyle = "nlsv";
-    FXRemoveOldTrashItems= true;
+    FXDefaultSearchScope = "SCcf";
+    FXPreferredViewStyle = "Nlsv";
+    FXRemoveOldTrashItems = true;
+    AppleShowAllExtensions = true;
+    CreateDesktop = false;
     NewWindowTarget = "Home";
+    QuitMenuItem = true;
+    _FXShowPosixPathInTitle = false;
+    _FXSortFoldersFirst = false;
+    _FXSortFoldersFirstOnDesktop = false;
+    FXEnableExtensionChangeWarning = false;
     ShowExternalHardDrivesOnDesktop = false;
+    ShowHardDrivesOnDesktop = false;
+    ShowMountedServersOnDesktop = false;
+    ShowRemovableMediaOnDesktop = false;
   };
 }
 

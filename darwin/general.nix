@@ -26,11 +26,11 @@
   # fonts.fontDir.enable = true;
   fonts.packages = with pkgs; [
      recursive
-#     (nerd-fonts.override { fonts = [ "JetBrainsMono" "FiraCode" "Hack" ]; })
+#     (nerdfonts.override { fonts = [ "JetBrainsMono" "FiraCode" "Hack" ]; })
    ];
 
   # Add ability to used TouchID for sudo authentication
-  security.pam.enableSudoTouchIdAuth = false;
+  # security.pam.enableSudoTouchIdAuth = false;
 
   # Disable iCloud sync
   system.defaults.NSGlobalDomain.NSDocumentSaveNewDocumentsToCloud = false;
