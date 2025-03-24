@@ -45,6 +45,7 @@ homebrew = {
     "nrlquaker/createzap"
     "facebook/fb"
     "mobile-dev-inc/tap"
+    "mac-cleanup/mac-cleanup-py"
     "oven-sh/bun"
     # "PlayCover/playcover"
   ];
