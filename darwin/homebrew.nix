@@ -148,7 +148,7 @@ homebrew = {
 #    "visual-studio-code"
 #    "whatsapp"
     "obs"
-#    "whisky"
+    "whisky"
   ];
 
   # Configuration related to casks
