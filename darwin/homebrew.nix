@@ -166,6 +166,7 @@ homebrew = {
     "pkg-config"
     "fprobe"
     "gh"
+    "pipx"
     "gnupg"
     "ffmpeg"
     "fastfetch"
