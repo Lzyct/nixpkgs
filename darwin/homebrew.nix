@@ -106,6 +106,7 @@ homebrew = {
     "aldente"
 #    "appcleaner"
     "bartender" # enable it later
+    "blender"
     "discord"
     "betterdiscord-installer"
 #    "cheatsheet"
