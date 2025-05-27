@@ -45,6 +45,7 @@ homebrew = {
     "nrlquaker/createzap"
     "facebook/fb"
     "oven-sh/bun"
+    "mac-cleanup/mac-cleanup-py"
     # "PlayCover/playcover"
   ];
 
@@ -131,7 +132,7 @@ homebrew = {
 #    "meld"
     #"mos"
     "MonitorControl"
-    "notchnook"
+#    "notchnook"
     #"notion"
 #    "intellidock" # disable until this fixed
     "orbstack"
@@ -164,8 +165,10 @@ homebrew = {
     "pkg-config"
     "fprobe"
     "gh"
+    "git"
     "gnupg"
     "ffmpeg"
+    "mac-cleanup-py"
     "fastfetch"
     "maven"
     "idb-companion"

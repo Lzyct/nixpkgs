@@ -4,6 +4,7 @@
   # Nix configuration ------------------------------------------------------------------------------
   # Set the GID to match your system's current nixbld group
   ids.gids.nixbld = 350;
+  system.primaryUser = "lzyct";
 
   nix.settings.substituters = [
     "https://cache.nixos.org/"
