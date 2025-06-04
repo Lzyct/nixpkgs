@@ -135,7 +135,12 @@ nix build .#darwinConfigurations.Lzyct.system
     After `Run Build` you can apply from `./result` with this command
 
 ```console
-./result/sw/bin/darwin-rebuild switch --flake .#Lzyct
+sudo ./result/sw/bin/darwin-rebuild switch --flake .#Lzyct
+```
+
+- Or you can clean run
+```console
+nix store gc; nix flake update; nix build .#darwinConfigurations.Lzyct.system --fallback; sudo ./result/sw/bin/darwin-rebuild switch --flake .#Lzyct
 ```
 
 - Done 🚀🎉
