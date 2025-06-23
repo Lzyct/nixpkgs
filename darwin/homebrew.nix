@@ -129,7 +129,6 @@ homebrew = {
     #"localsend"
     "karabiner-elements"
     "keka"
-    "lunar"
 #    "meld"
     #"mos"
     "MonitorControl"
