@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3905d40-f6ec-477c-a6bd-fd7736303ce7" name="Changes" comment="chore: update workspace.xml for improved configuration and add initial Java module setup">
+    <list default="true" id="f3905d40-f6ec-477c-a6bd-fd7736303ce7" name="Changes" comment="chore: add lunar to homebrew.nix package list">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/darwin/bootstrap.nix" beforeDir="false" afterPath="$PROJECT_DIR$/darwin/bootstrap.nix" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/darwin/homebrew.nix" beforeDir="false" afterPath="$PROJECT_DIR$/darwin/homebrew.nix" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flake.lock" beforeDir="false" afterPath="$PROJECT_DIR$/flake.lock" afterDir="false" />
     </list>
@@ -203,9 +202,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="chore: update flake.lock" />
-    <MESSAGE value="clean: remove unnecessary app" />
-    <MESSAGE value="feat: enable dbeaver" />
     <MESSAGE value="feat: enable orbstack" />
     <MESSAGE value="feat: enable mos and logioptions+" />
     <MESSAGE value="feat: enable with latest nix" />
@@ -228,7 +224,10 @@
     <MESSAGE value="chore: update workspace.xml and homebrew.nix for improved configuration" />
     <MESSAGE value="chore: add initial configuration for Java module in nixpkgs.iml" />
     <MESSAGE value="chore: update workspace.xml for improved configuration and add initial Java module setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: update workspace.xml for improved configuration and add initial Java module setup" />
+    <MESSAGE value="chore: update workspace.xml, bootstrap.nix, and homebrew.nix for improved configuration" />
+    <MESSAGE value="docs: add sudo regarding new update" />
+    <MESSAGE value="chore: add lunar to homebrew.nix package list" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: add lunar to homebrew.nix package list" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
