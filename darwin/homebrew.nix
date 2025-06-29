@@ -134,7 +134,7 @@ homebrew = {
 #    "meld"
     "mos"
     "MonitorControl"
-    "notchnook"
+#    "notchnook"
     #"notion"
 #    "intellidock" # disable until this fixed
     "orbstack"
@@ -149,7 +149,7 @@ homebrew = {
 #    "visual-studio-code"
 #    "whatsapp"
     "obs"
-    "whisky"
+    #"whisky"
   ];
 
   # Configuration related to casks
