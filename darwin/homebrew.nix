@@ -178,6 +178,7 @@ homebrew = {
     "scrcpy"
     "pinentry-mac"
     "bun"
+    "node"
     "yarn"
     "mtr"
     "mac-cleanup-py"
