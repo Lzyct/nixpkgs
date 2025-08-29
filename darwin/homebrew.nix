@@ -121,7 +121,7 @@ homebrew = {
     "font-monaspace"
     # "google-chrome"
     "grammarly-desktop"
-    #"iina"
+    "iina"
     "jetbrains-toolbox"
     "istat-menus"
     "iterm2"
@@ -176,6 +176,7 @@ homebrew = {
     "scrcpy"
     "pinentry-mac"
     "bun"
+    "nvm"
     "yarn"
     "mtr"
     "libpq" # execute this: brew link --force libpq

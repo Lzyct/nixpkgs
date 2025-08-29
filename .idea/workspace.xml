@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3905d40-f6ec-477c-a6bd-fd7736303ce7" name="Changes" comment="chore: add lunar to homebrew.nix package list">
+    <list default="true" id="f3905d40-f6ec-477c-a6bd-fd7736303ce7" name="Changes" comment="chore: update workspace.xml to reflect recent changes and improve configuration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/darwin/homebrew.nix" beforeDir="false" afterPath="$PROJECT_DIR$/darwin/homebrew.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flake.lock" beforeDir="false" afterPath="$PROJECT_DIR$/flake.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/fish.nix" beforeDir="false" afterPath="$PROJECT_DIR$/home/fish.nix" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,9 +103,12 @@
     &quot;NIXITCH_NIX_USER_PROFILE_DIR&quot;: &quot;&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
@@ -163,12 +166,17 @@
       <framework value="gotest" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
       </set>
     </attachedChunks>
   </component>
@@ -202,8 +210,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: enable orbstack" />
-    <MESSAGE value="feat: enable mos and logioptions+" />
     <MESSAGE value="feat: enable with latest nix" />
     <MESSAGE value="chore: activate apps" />
     <MESSAGE value="feat: update defaults for macOS settings and remove nodejs from homebrew" />
@@ -227,7 +233,9 @@
     <MESSAGE value="chore: update workspace.xml, bootstrap.nix, and homebrew.nix for improved configuration" />
     <MESSAGE value="docs: add sudo regarding new update" />
     <MESSAGE value="chore: add lunar to homebrew.nix package list" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: add lunar to homebrew.nix package list" />
+    <MESSAGE value="chore: remove lunar from homebrew.nix package list" />
+    <MESSAGE value="chore: update workspace.xml to reflect recent changes and improve configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: update workspace.xml to reflect recent changes and improve configuration" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
