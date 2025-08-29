@@ -12,8 +12,8 @@
       add_newline = true;
       command_timeout = 5000;
       character = {
-         success_symbol = ''[ 󰘍](bold yellow)'';
-         error_symbol = ''[ 󰘍](bold red)'';
+         success_symbol = ''[ ↳](bold yellow)'';
+         error_symbol = ''[ ↳](bold red)'';
        };
 
       package.disabled = false;
