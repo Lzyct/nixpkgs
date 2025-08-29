@@ -16,6 +16,7 @@
     pkgs.fishPlugins.foreign-env
     # https://github.com/wfxr/forgit
     pkgs.fishPlugins.forgit
+    pkgs.fishPlugins.bass
     #  fzf.fizh fail
     # https://github.com/PatrickF1/fzf.fish
   ];
@@ -70,10 +71,17 @@
      set -x FLUTTER_HOME $HOME/Library/flutter/bin
      set -x PATH $PATH:$FLUTTER_HOME
      set -x PATH "$PATH":"$HOME/.pub-cache/bin"
-     
+
      # IntelliJ idea
      set -x INTELLIJ_IDEA "/Applications/IntelliJ IDEA CE.app/Contents/MacOS"
      set -x PATH $PATH:$INTELLIJ_IDEA
+
+     # NVM - Node Version Manager
+     set -x NVM_DIR "$HOME/.nvm"
+     if test -s (brew --prefix)/share/nvm/nvm.sh
+         bass source (brew --prefix)/share/nvm/nvm.sh --no-use
+     end
+
 
      # Init starship
      eval "$(starship init fish)"
@@ -83,6 +91,11 @@
 
   programs.fish.functions = {
     gitignore = "curl -sL https://www.gitignore.io/api/$argv";
+    nvm = {
+      body = ''
+        bass source (brew --prefix nvm)/nvm.sh --no-use ';' nvm $argv
+      '';
+    };
     fbuild = {
       body = ''
         set flavor $argv[1]
