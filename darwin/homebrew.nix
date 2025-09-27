@@ -134,6 +134,7 @@ homebrew = {
 #    "meld"
     "mos"
     "MonitorControl"
+    "ngrok"
 #    "notchnook"
     #"notion"
 #    "intellidock" # disable until this fixed
