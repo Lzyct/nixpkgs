@@ -46,6 +46,7 @@ homebrew = {
     "facebook/fb"
     "oven-sh/bun"
     "mac-cleanup/mac-cleanup-py"
+    "rafaelswi/menubarusb"
     # "PlayCover/playcover"
   ];
 
@@ -132,6 +133,7 @@ homebrew = {
 #    "meld"
     #"mos"
     "MonitorControl"
+    "menubarusb"
 #    "notchnook"
     #"notion"
 #    "intellidock" # disable until this fixed
