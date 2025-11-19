@@ -47,6 +47,7 @@ homebrew = {
     "mobile-dev-inc/tap"
     "mac-cleanup/mac-cleanup-py"
     "oven-sh/bun"
+    "rafaelswi/menubarusb"
     # "PlayCover/playcover"
   ];
 
@@ -134,6 +135,7 @@ homebrew = {
 #    "meld"
     "mos"
     "MonitorControl"
+    "menubarusb"
     "ngrok"
 #    "notchnook"
     #"notion"
