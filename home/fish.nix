@@ -140,9 +140,9 @@
       body = "
         flutter clean;
         flutter pub get;
-        flutter build ipa --flavor $argv -t lib/main_$argv.dart --release;
-        flutter build appbundle --flavor $argv -t lib/main_$argv.dart --release;
-        flutter build apk --flavor $argv -t lib/main_$argv.dart --release;";
+        flutter build ipa --flavor $argv --dart-define=BUILD_FLAVOR=$argv -t lib/main.dart --release;
+        flutter build appbundle --flavor $argv --dart-define=BUILD_FLAVOR=$argv -t lib/main.dart --release;
+        flutter build apk --flavor $argv --dart-define=BUILD_FLAVOR=$argv -t lib/main.dart --release;";
     };
     git-airasia ={
         body ="
