@@ -10,6 +10,6 @@
     ".DS_Store"
   ];
 
-  programs.git.userEmail = config.home.user-info.email;
-  programs.git.userName = config.home.user-info.fullName;
+  programs.git.settings.user.email = config.home.user-info.email;
+  programs.git.settings.user.name = config.home.user-info.fullName;
 }

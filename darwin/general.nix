@@ -16,7 +16,7 @@
   # `home-manager` currently has issues adding them to `~/Applications`
   # Issue: https://github.com/nix-community/home-manager/issues/1341
   environment.systemPackages = with pkgs; [
-    dnscrypt-proxy2
+    dnscrypt-proxy
     terminal-notifier
   ];
 
@@ -41,7 +41,7 @@
     serviceConfig.RunAtLoad = true;
     serviceConfig.KeepAlive = true;
     serviceConfig.ProgramArguments = [
-      "${pkgs.dnscrypt-proxy2}/bin/dnscrypt-proxy"
+      "${pkgs.dnscrypt-proxy}/bin/dnscrypt-proxy"
       "-config"
       (toString (pkgs.writeText "dnscrypt-proxy.toml" ''
         server_names = ['google', 'cloudflare', 'cloud9']
