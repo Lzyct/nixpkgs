@@ -225,19 +225,19 @@
             options = {
               users.primaryUser = {
                 username = mkOption {
-                  type = with types; nullOr string;
+                  type = types.nullOr types.str;
                   default = null;
                 };
                 fullName = mkOption {
-                  type = with types; nullOr string;
+                  type = types.nullOr types.str;
                   default = null;
                 };
                 email = mkOption {
-                  type = with types; nullOr string;
+                  type = types.nullOr types.str;
                   default = null;
                 };
                 nixConfigDirectory = mkOption {
-                  type = with types; nullOr string;
+                  type = types.nullOr types.str;
                   default = null;
                 };
               };
