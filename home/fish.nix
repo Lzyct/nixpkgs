@@ -151,6 +151,10 @@ fbuild = {
     end
     silent_with_spinner "flutter pub get" "Running Flutter pub get..."
 
+    # Run build_runner and tests
+    silent_with_spinner "dart pub run build_runner build --delete-conflicting-outputs" "Running build_runner..."
+    silent_with_spinner "flutter test" "Running Flutter tests..."
+
     set -l ipa_path "build/ios/archive/"
     silent_with_spinner "flutter build ipa --flavor $flavor --dart-define-from-file .env.$flavor.json" "Building iOS IPA..."
     echo "iOS IPA Path: $ipa_path"
