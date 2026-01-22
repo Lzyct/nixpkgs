@@ -110,10 +110,10 @@
                 "Wi-Fi"
                 "USB 10/100/1000 LAN"
               ];
+              # Let determinate nix handle nix configuration
+              nix.enable = false;
             }
           ];
-          # Let determinate nix handle nix configuration
-          nix.enable = false;
         };
 
         # Config with small modifications needed/desired for CI with GitHub workflow
