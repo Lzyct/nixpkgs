@@ -126,6 +126,8 @@
               homebrew.enable = lib.mkForce false;
             })
           ];
+           # Let determinate nix handle nix configuration
+            nix.enable = false;
         };
       };
 

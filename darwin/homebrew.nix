@@ -29,7 +29,7 @@ homebrew = {
     enable = true;
     onActivation = {
         autoUpdate = true;
-        cleanup = "uninstall";
+        cleanup = "zap";
         upgrade = true;
     };
 };
@@ -42,12 +42,18 @@ homebrew = {
 #    "homebrew/cask-versions"
 #    "homebrew/core"
 #    "homebrew/services"
-    "nrlquaker/createzap"
+#    "nrlquaker/createzap"
     "facebook/fb"
     "mobile-dev-inc/tap"
     "mac-cleanup/mac-cleanup-py"
-    "oven-sh/bun"
-    "rafaelswi/menubarusb"
+    {
+      name = "rafaelswi/menubarusb";
+      clone_target = "https://github.com/rafaelSwi/homebrew-menubarusb.git";
+    }
+    {
+      name = "oven-sh/bun";
+      clone_target = "https://github.com/oven-sh/homebrew-bun.git";
+    }
     # "PlayCover/playcover"
   ];
 
@@ -174,7 +180,7 @@ homebrew = {
     "ffmpeg"
     "fastfetch"
     "maven"
-    "maestro"
+    "mobile-dev-inc/tap/maestro"
     "idb-companion"
     "neovim"
     "scrcpy"
