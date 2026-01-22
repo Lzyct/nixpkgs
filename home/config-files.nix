@@ -11,7 +11,6 @@
         github-username = "Lzyct";
       };
     };
-    nix.enable = true;
   };
 
   # Stop `parallel` from displaying citation warning
