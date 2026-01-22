@@ -112,6 +112,8 @@
               ];
             }
           ];
+           # Let determinate nix handle nix configuration
+            nix.enable = false;
         };
 
         # Config with small modifications needed/desired for CI with GitHub workflow
