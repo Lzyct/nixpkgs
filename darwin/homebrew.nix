@@ -46,14 +46,8 @@ homebrew = {
     "facebook/fb"
     "mobile-dev-inc/tap"
     "mac-cleanup/mac-cleanup-py"
-    {
-      name = "rafaelswi/menubarusb";
-      clone_target = "https://github.com/rafaelSwi/homebrew-menubarusb.git";
-    }
-    {
-      name = "oven-sh/bun";
-      clone_target = "https://github.com/oven-sh/homebrew-bun.git";
-    }
+    "rafaelswi/menubarusb"
+    "oven-sh/bun"
     # "PlayCover/playcover"
   ];
 
@@ -181,7 +175,7 @@ homebrew = {
     "fastfetch"
     "maven"
     "mobile-dev-inc/tap/maestro"
-    "idb-companion"
+    #"idb-companion"
     "neovim"
     "scrcpy"
     "pinentry-mac"
