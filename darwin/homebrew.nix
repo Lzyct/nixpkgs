@@ -176,6 +176,7 @@ homebrew = {
     "maven"
     "mobile-dev-inc/tap/maestro"
     #"idb-companion"
+    "mole"
     "neovim"
     "scrcpy"
     "pinentry-mac"

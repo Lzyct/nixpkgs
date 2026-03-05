@@ -60,7 +60,7 @@
       directory = {
         format = ''[](fg:mantle)[   $path ]($style)[](fg:mantle) '';
 #        truncation_length = 255;
-         truncation_symbol = ''󰍻'';
+#         truncation_symbol = '' 󰍻 '';
 #        truncate_to_repo = false;
 #        use_logical_path = false;
         style = ''bg:mantle fg:blue bold'';
