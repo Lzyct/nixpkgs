@@ -45,7 +45,6 @@ homebrew = {
     "nrlquaker/createzap"
     "facebook/fb"
     "oven-sh/bun"
-    "mac-cleanup/mac-cleanup-py"
     "rafaelswi/menubarusb"
     # "PlayCover/playcover"
   ];
@@ -170,8 +169,8 @@ homebrew = {
     "git"
     "gnupg"
     "ffmpeg"
-    "mac-cleanup-py"
     "fastfetch"
+    "mole"
     "maven"
     "idb-companion"
     "neovim"
