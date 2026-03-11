@@ -8,7 +8,7 @@ in
 
 {
   environment.shellInit = mkIf brewEnabled ''
-    eval "$(${config.homebrew.brewPrefix}/brew shellenv)"
+    eval "$(${config.homebrew.prefix}/brew shellenv)"
   '';
 
   # https://docs.brew.sh/Shell-Completion#configuring-completions-in-fish
@@ -29,7 +29,7 @@ homebrew = {
     enable = true;
     onActivation = {
         autoUpdate = true;
-        cleanup = "uninstall";
+        cleanup = "zap";
         upgrade = true;
     };
 };

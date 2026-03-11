@@ -36,7 +36,7 @@
     #eza # fancy version of `ls` replace with lsd
     fd # fancy version of `find`
     htop # fancy version of `top`
-    neofetch
+    fastfetch
     wget
     #yarn prefer to use homebrew version
     #nodejs prefer to use homebrew version

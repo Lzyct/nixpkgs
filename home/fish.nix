@@ -82,8 +82,7 @@
          bass source (brew --prefix)/share/nvm/nvm.sh --no-use
      end
 
-
-     # Init starship
+    # Init starship
      eval "$(starship init fish)"
 
      set fish_greeting
