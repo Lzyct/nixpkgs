@@ -8,7 +8,7 @@ in
 
 {
   environment.shellInit = mkIf brewEnabled ''
-    eval "$(${config.homebrew.brewPrefix}/brew shellenv)"
+    eval "$(${config.homebrew.prefix}/bin/brew shellenv)"
   '';
 
   # https://docs.brew.sh/Shell-Completion#configuring-completions-in-fish
@@ -45,7 +45,6 @@ homebrew = {
 #    "nrlquaker/createzap"
     "facebook/fb"
     "mobile-dev-inc/tap"
-    "mac-cleanup/mac-cleanup-py"
     "rafaelswi/menubarusb"
     "oven-sh/bun"
     # "PlayCover/playcover"
@@ -184,7 +183,6 @@ homebrew = {
     "node"
     "yarn"
     "mtr"
-    "mac-cleanup-py"
     "libpq" # execute this: brew link --force libpq
     "lcov"
   ];
