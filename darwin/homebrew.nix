@@ -180,7 +180,7 @@ homebrew = {
     "scrcpy"
     "pinentry-mac"
     "bun"
-    "node"
+    "nvm"
     "yarn"
     "mtr"
     "libpq" # execute this: brew link --force libpq
