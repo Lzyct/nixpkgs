@@ -45,8 +45,8 @@ homebrew = {
 #    "nrlquaker/createzap"
     "facebook/fb"
     "mobile-dev-inc/tap"
-    "rafaelswi/menubarusb"
-    "oven-sh/bun"
+    #"rafaelswi/menubarusb"
+   # "oven-sh/bun"
     # "PlayCover/playcover"
   ];
 
@@ -101,17 +101,17 @@ homebrew = {
   homebrew.casks = [
 #    "alt-tab"
     "ghostty"
-    "airbuddy"
+#    "airbuddy"
     "arc"
     "aldente"
 #    "appcleaner"
     "bartender" # enable it later
-    "blender"
+#    "blender"
     "discord"
     "betterdiscord-installer"
 #    "cheatsheet"
     "copilot-for-xcode"
-    "dbeaver-community"
+#    "dbeaver-community"
 #    "beekeeper-studio"
 #    "keycastr"
 #    "docker"
@@ -133,7 +133,7 @@ homebrew = {
 #    "meld"
     "mos"
     "MonitorControl"
-    "menubarusb"
+    #"menubarusb"
     "ngrok"
 #    "notchnook"
     #"notion"
@@ -149,7 +149,7 @@ homebrew = {
     # "upwork" issue install from homebrew
 #    "visual-studio-code"
 #    "whatsapp"
-    "obs"
+#    "obs"
     #"whisky"
   ];
 
@@ -179,8 +179,10 @@ homebrew = {
     "neovim"
     "scrcpy"
     "pinentry-mac"
-    "bun"
-    "nvm"
+    #"bun"
+    "node"
+#    "nvm"
+    "npm"
     "yarn"
     "mtr"
     "libpq" # execute this: brew link --force libpq
