@@ -132,7 +132,7 @@ homebrew = {
     "keka"
 #    "meld"
     "mos"
-    "MonitorControl"
+#    "MonitorControl"
     "menubarusb"
     "ngrok"
 #    "notchnook"
