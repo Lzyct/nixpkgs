@@ -124,6 +124,7 @@ fbuild = {
         set -l message $argv[2]
 
         if test "$verbose" = "true"
+            echo $message
             eval $cmd
         else
             echo -n $message
@@ -156,6 +157,8 @@ fbuild = {
 
     # Track total build start time
     set -l total_start_time (date +%s)
+
+    silent_with_spinner "git pull" "Pulling latest changes..."
 
     # Perform builds with output path logging
     if test "$do_clean" = "true"
