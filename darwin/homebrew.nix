@@ -30,6 +30,7 @@ homebrew = {
     onActivation = {
         autoUpdate = true;
         cleanup = "zap";
+        extraFlags = [ "--force-cleanup" ];
         upgrade = true;
     };
 };
@@ -93,7 +94,8 @@ homebrew = {
 #    Fresco = 1251572132;
 #    Boom3D = 1233048948;
 #    BalanceLock = 1019371109;
-
+     Xcode = 497799835;
+     Deskeen = 6746357941;
   };
 
   # If an app isn't available in the Mac App Store, or the version in the App Store has
