@@ -130,6 +130,7 @@ homebrew = {
     "istat-menus"
     "iterm2"
     "localsend"
+    "logi-options+"
     "karabiner-elements"
     "keka"
 #    "meld"
