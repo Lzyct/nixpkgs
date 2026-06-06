@@ -34,11 +34,6 @@
       nixpkgsConfig = {
         config = { allowUnfree = true; };
         overlays = attrValues self.overlays ++ [
-          # Sub in x86 version of packages that don't build on Apple Silicon yet
-          (final: prev: (optionalAttrs (prev.stdenv.system == "aarch64-darwin") {
-            inherit (final.pkgs-x86)
- 	      nix-index;
-          }))
           (final: prev: {
             # TODO: remove when `nvim-lastplace` lands in `nixpkgs-unstable`
             vimPlugins = prev.vimPlugins.extend (_: _: {
@@ -79,6 +74,7 @@
               imports = attrValues self.homeManagerModules;
               home.stateVersion = homeManagerStateVersion;
               home.user-info = config.users.primaryUser;
+              manual.manpages.enable = false;
             };
             # Add a registry entry for this flake
             nix.registry.my.flake = self;
