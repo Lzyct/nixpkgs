@@ -180,6 +180,7 @@ homebrew = {
     #"idb-companion"
     "mole"
     "neovim"
+    "ripgrep"
     "scrcpy"
     "pinentry-mac"
     "bun"
