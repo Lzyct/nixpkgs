@@ -29,7 +29,6 @@ homebrew = {
     enable = true;
     onActivation = {
         autoUpdate = true;
-        cleanup = "zap";
         extraFlags = [ "--force-cleanup" ];
         upgrade = true;
     };
@@ -171,6 +170,7 @@ homebrew = {
     "pkg-config"
     "fprobe"
     "gh"
+    "glab"
     "pipx"
     "gnupg"
     "ffmpeg"
