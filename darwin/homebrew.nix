@@ -45,7 +45,10 @@ homebrew = {
 #    "nrlquaker/createzap"
     "facebook/fb"
     "mobile-dev-inc/tap"
-    "rafaelswi/menubarusb"
+    {
+      name = "rafaelswi/menubarusb";
+      trusted = true;
+    }
     "oven-sh/bun"
     # "PlayCover/playcover"
   ];
