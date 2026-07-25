@@ -47,40 +47,44 @@
      set -x LC_ALL en_US.UTF-8
      set -x LANG en_US.UTF-8
 
+     # Some shell integrations re-import the Nix profile into an inherited PATH.
+     # Remove duplicates before adding user paths so nested shells stay stable.
+     set -l deduplicated_path
+     for path_entry in $PATH
+         contains -- "$path_entry" $deduplicated_path; or set -a deduplicated_path "$path_entry"
+     end
+     set -gx PATH $deduplicated_path
+
      # Homebrew
-     set -x PATH /opt/homebrew/bin $PATH
+     fish_add_path --global /opt/homebrew/bin
 
      # Rust
-     set -gx PATH "$HOME/.cargo/bin" $PATH
+     fish_add_path --global "$HOME/.cargo/bin"
 
      # Maestro
-     set -x PATH $PATH $HOME/.maestro/bin
+     fish_add_path --global --append "$HOME/.maestro/bin"
 
      # Android
-     set -x ANDROID_HOME /Users/$USER/Library/Android/sdk
-     set -x PATH $PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+     set -gx ANDROID_HOME "$HOME/Library/Android/sdk"
+     fish_add_path --global --append "$ANDROID_HOME/tools" "$ANDROID_HOME/platform-tools"
 
      # IntelliJ IDEA
-     set -gx PATH "$HOME/.local/bin" $PATH
+     fish_add_path --global "$HOME/.local/bin"
 
-     # libq
-     set -x PATH /opt/homebrew/opt/libpq/bin $PATH
+     # libpq
+     fish_add_path --global /opt/homebrew/opt/libpq/bin
 
 
      # Flutter
-     set -x FLUTTER_HOME $HOME/Library/flutter/bin
-     set -x PATH $PATH:$FLUTTER_HOME
-     set -x PATH "$PATH":"$HOME/.pub-cache/bin"
+     set -gx FLUTTER_HOME "$HOME/Library/flutter/bin"
+     fish_add_path --global --append "$FLUTTER_HOME" "$HOME/.pub-cache/bin"
 
-     # IntelliJ idea
-     set -x INTELLIJ_IDEA "/Applications/IntelliJ IDEA CE.app/Contents/MacOS"
-     set -x PATH $PATH:$INTELLIJ_IDEA
+     # IntelliJ IDEA
+     set -gx INTELLIJ_IDEA "/Applications/IntelliJ IDEA CE.app/Contents/MacOS"
+     fish_add_path --global --append "$INTELLIJ_IDEA"
 
      # NVM - Node Version Manager
      set -x NVM_DIR "$HOME/.nvm"
-     if test -s (brew --prefix)/share/nvm/nvm.sh
-         bass source (brew --prefix)/share/nvm/nvm.sh --no-use
-     end
 
      # Init starship
      eval "$(starship init fish)"
