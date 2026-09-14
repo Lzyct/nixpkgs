@@ -130,11 +130,19 @@ fbuild = {
         if test "$verbose" = "true"
             echo $message
             eval $cmd
+            set -l cmd_status $status
+
+            if test $cmd_status -ne 0
+                echo "$message failed with exit code $cmd_status" >&2
+            end
+
+            return $cmd_status
         else
             echo -n $message
             set -l start_time (date +%s)
-            eval $cmd > /dev/null 2>&1 &
-            set -l pid (jobs -l | awk '{print $2}')
+            set -l output_file (mktemp)
+            eval $cmd > $output_file 2>&1 &
+            set -l pid $last_pid
             set -l spinner '⠋' '⠙' '⠹' '⠸' '⠼' '⠴' '⠦' '⠧' '⠇' '⠏'
             set -l i 1
 
@@ -145,9 +153,20 @@ fbuild = {
             end
 
             wait $pid
+            set -l cmd_status $status
             set -l end_time (date +%s)
             set -l duration (math $end_time - $start_time)
+
+            if test $cmd_status -ne 0
+                echo -e "\r$message ✗ ($duration seconds)" >&2
+                cat $output_file >&2
+                rm -f $output_file
+                return $cmd_status
+            end
+
+            rm -f $output_file
             echo -e "\r$message ✓ ($duration seconds)"
+            return 0
         end
     end
 
@@ -162,28 +181,28 @@ fbuild = {
     # Track total build start time
     set -l total_start_time (date +%s)
 
-    silent_with_spinner "git pull" "Pulling latest changes..."
+    silent_with_spinner "git pull" "Pulling latest changes..."; or return $status
 
     # Perform builds with output path logging
     if test "$do_clean" = "true"
-        silent_with_spinner "flutter clean" "Cleaning Flutter project..."
+        silent_with_spinner "flutter clean" "Cleaning Flutter project..."; or return $status
     end
-    silent_with_spinner "flutter pub get" "Running Flutter pub get..."
+    silent_with_spinner "flutter pub get" "Running Flutter pub get..."; or return $status
 
     # Run build_runner and tests
-    silent_with_spinner "dart pub run build_runner build --delete-conflicting-outputs" "Running build_runner..."
-    silent_with_spinner "flutter test" "Running Flutter tests..."
+    silent_with_spinner "dart pub run build_runner build --delete-conflicting-outputs" "Running build_runner..."; or return $status
+    silent_with_spinner "flutter test" "Running Flutter tests..."; or return $status
 
     set -l ipa_path "build/ios/archive/"
-    silent_with_spinner "flutter build ipa --flavor $flavor --dart-define-from-file .env.$flavor.json" "Building iOS IPA..."
+    silent_with_spinner "flutter build ipa --flavor $flavor --dart-define-from-file .env.$flavor.json" "Building iOS IPA..."; or return $status
     echo "iOS IPA Path: $ipa_path"
 
     set -l aab_path "build/app/outputs/bundle/$flavor/app-$flavor-release.aab"
-    silent_with_spinner "flutter build appbundle --flavor $flavor --dart-define-from-file .env.$flavor.json" "Building Android App Bundle..."
+    silent_with_spinner "flutter build appbundle --flavor $flavor --dart-define-from-file .env.$flavor.json" "Building Android App Bundle..."; or return $status
     echo "Android App Bundle Path: $aab_path"
 
     set -l apk_path "build/app/outputs/flutter-apk/app-$flavor-release.apk"
-    silent_with_spinner "flutter build apk --flavor $flavor --dart-define-from-file .env.$flavor.json" "Building Android APK..."
+    silent_with_spinner "flutter build apk --flavor $flavor --dart-define-from-file .env.$flavor.json" "Building Android APK..."; or return $status
     echo "Android APK Path: $apk_path"
 
     # Calculate and display total build duration
