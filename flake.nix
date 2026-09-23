@@ -136,7 +136,7 @@
 #      inherit pkgs;
 #      modules = attrValues self.homeManagerModules ++ singleton ({ config, ... }: {
 #                    home.username = primaryUserInfo.username;
-#                    home.homeDirectory = "/${if pkgs.stdenv.isDarwin then "Users" else "home"}/${primaryUserInfo.username}";
+#                    home.homeDirectory = "/${if pkgs.stdenv.hostPlatform.isDarwin then "Users" else "home"}/${primaryUserInfo.username}";
 #                    home.stateVersion = homeManagerStateVersion;
 #                    home.user-info = primaryUserInfo // {
 #                    nixConfigDirectory = "${primaryUserInfo.nixConfigDirectory}";
