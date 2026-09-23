@@ -54,7 +54,7 @@
     nix-update # swiss-knife for updating nix packages
     nixpkgs-review # review pull-requests on nixpkgs
     statix # lints and suggestions for the Nix programming language
-  ] ++ lib.optionals stdenv.isDarwin [
+  ] ++ lib.optionals stdenv.hostPlatform.isDarwin [
     # cocoapods preferably installed via homebrew to get latest version
     m-cli # useful macOS CLI commands
     xcode-install
