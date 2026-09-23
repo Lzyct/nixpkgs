@@ -155,6 +155,7 @@ homebrew = {
 #    "visual-studio-code"
 #    "whatsapp"
     "obs"
+    "zoispag/tap/omniroute-tray"
     #"whisky"
   ];
 
