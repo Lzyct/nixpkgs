@@ -43,13 +43,30 @@ homebrew = {
 #    "homebrew/core"
 #    "homebrew/services"
 #    "nrlquaker/createzap"
-    "facebook/fb"
-    "mobile-dev-inc/tap"
+    {
+      name = "facebook/fb";
+      trusted = true;
+    }
+    {
+      name = "mobile-dev-inc/tap";
+      trusted = true;
+    }
     {
       name = "rafaelswi/menubarusb";
       trusted = true;
     }
-    "oven-sh/bun"
+    {
+      name = "oven-sh/bun";
+      trusted = true;
+    }
+    {
+      name = "zoispag/tap";
+      trusted = true;
+    }
+    {
+      name = "lazycatlabs/tap";
+      trusted = true;
+    }
     # "PlayCover/playcover"
   ];
 
@@ -156,6 +173,7 @@ homebrew = {
 #    "whatsapp"
     "obs"
     "zoispag/tap/omniroute-tray"
+    "lazycatlabs/tap/trackpad-rotator"
     #"whisky"
   ];
 
