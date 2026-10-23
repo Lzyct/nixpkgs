@@ -51,10 +51,10 @@ homebrew = {
       name = "mobile-dev-inc/tap";
       trusted = true;
     }
-    {
-      name = "rafaelswi/menubarusb";
-      trusted = true;
-    }
+#    {
+#      name = "rafaelswi/menubarusb";
+#      trusted = true;
+#    }
     {
       name = "oven-sh/bun";
       trusted = true;
@@ -129,7 +129,7 @@ homebrew = {
     "bartender" # enable it later
     "blender"
     "discord"
-    "betterdiscord-installer"
+#    "betterdiscord-installer"
 #    "cheatsheet"
     "copilot-for-xcode"
     "dbeaver-community"
@@ -155,7 +155,7 @@ homebrew = {
 #    "meld"
     "mos"
 #    "MonitorControl"
-    "menubarusb"
+#    "menubarusb"
     "ngrok"
 #    "notchnook"
     #"notion"
