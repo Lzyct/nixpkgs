@@ -122,7 +122,7 @@ homebrew = {
   homebrew.casks = [
 #    "alt-tab"
     "ghostty"
-    "airbuddy"
+    "lazycatlabs/tap/airbuddy@2.8.1" # locked: core cask can't be pinned
     "arc"
     "aldente"
 #    "appcleaner"
