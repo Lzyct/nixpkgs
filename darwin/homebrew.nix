@@ -174,6 +174,7 @@ homebrew = {
     "obs"
     "zoispag/tap/omniroute-tray"
     "lazycatlabs/tap/trackpad-rotator"
+    "lazycatlabs/tap/copaste"
     #"whisky"
   ];
 
